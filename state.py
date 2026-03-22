@@ -19,8 +19,10 @@ def load_state() -> dict:
 def save_state(state: dict) -> None:
     state["last_run"] = datetime.now().isoformat()
     state["run_count"] = state.get("run_count", 0) + 1
-    with open(STATE_FILE, "w") as f:
+    tmp = STATE_FILE + ".tmp"
+    with open(tmp, "w") as f:
         json.dump(state, f, indent=2)
+    os.replace(tmp, STATE_FILE)  # atomic — no corrupt state on kill
 
 
 def get_new_properties(listings: list[dict], state: dict) -> list[dict]:

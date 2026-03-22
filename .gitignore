@@ -1,0 +1,3 @@
+alerts/
+*.pyc
+__pycache__/

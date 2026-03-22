@@ -1,0 +1,1646 @@
+{
+  "seen_ids": {
+    "otm:18863496": {
+      "address": "Barretts Grove, London, N16",
+      "price": 1550000,
+      "score": 73,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1550000
+        }
+      ]
+    },
+    "otm:18409187": {
+      "address": "Cloudesley Road, London N1",
+      "price": 1750000,
+      "score": 79,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1750000
+        }
+      ]
+    },
+    "otm:17886516": {
+      "address": "Bromfield Street, Angel, Islington, London",
+      "price": 2000000,
+      "score": 69,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 2000000
+        }
+      ]
+    },
+    "otm:17979311": {
+      "address": "Cloudesley Road, Barnsbury, Islington, London",
+      "price": 2000000,
+      "score": 68,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 2000000
+        }
+      ]
+    },
+    "otm:12632133": {
+      "address": "Alkham Road, Stoke Newington, N16",
+      "price": 1250000,
+      "score": 55,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1250000
+        }
+      ]
+    },
+    "otm:18742652": {
+      "address": "Clissold Crescent , Stoke Newington, N16",
+      "price": 1300000,
+      "score": 67,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1300000
+        }
+      ]
+    },
+    "otm:18903174": {
+      "address": "Ardleigh Road, London N1",
+      "price": 1750000,
+      "score": -1,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1750000
+        }
+      ]
+    },
+    "otm:15220340": {
+      "address": "Stamford Road, London N1",
+      "price": 1899999,
+      "score": 59,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1899999
+        }
+      ]
+    },
+    "otm:17616630": {
+      "address": "Prince George Road, Stoke Newington, London, N16",
+      "price": 1175000,
+      "score": 53,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1175000
+        }
+      ]
+    },
+    "otm:18852355": {
+      "address": "Burma Road, Newington Green, N16, Newington Green, London, N16",
+      "price": 1700000,
+      "score": 53,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1850000
+        },
+        {
+          "date": "2026-03-17T21:23:46.645456",
+          "price": 1700000
+        }
+      ]
+    },
+    "otm:18812577": {
+      "address": "John Campbell Road, London, N16",
+      "price": 1250000,
+      "score": 62,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1250000
+        }
+      ]
+    },
+    "otm:18399153": {
+      "address": "Keystone Crescent, London N1",
+      "price": 1200000,
+      "score": 61,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1200000
+        }
+      ]
+    },
+    "otm:18392150": {
+      "address": "Allerton Road, Stoke Newington, London, N16",
+      "price": 1950000,
+      "score": 64,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1950000
+        }
+      ]
+    },
+    "otm:13737019": {
+      "address": "Leconfield Road, Newington Green, Highbury, London",
+      "price": 1750000,
+      "score": 53,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1750000
+        }
+      ]
+    },
+    "otm:1321492": {
+      "address": "Sylvester Path, Hackney, London, E8",
+      "price": 1100000,
+      "score": 50,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1100000
+        }
+      ]
+    },
+    "otm:13388401": {
+      "address": "Hertford Road, Hackney, London, N1",
+      "price": 1300000,
+      "score": 59,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1300000
+        }
+      ]
+    },
+    "otm:18262479": {
+      "address": "Shrubland Road, Hackney, London, E8",
+      "price": 1100000,
+      "score": -1,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1100000
+        }
+      ]
+    },
+    "otm:17319626": {
+      "address": "Allerton Road, London N16",
+      "price": 1950000,
+      "score": 59,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1950000
+        }
+      ]
+    },
+    "otm:18596467": {
+      "address": "Victorian Grove, N16, Stoke Newington, London, N16",
+      "price": 950000,
+      "score": -1,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1000000
+        },
+        {
+          "date": "2026-03-08T21:45:34.062786",
+          "price": 950000
+        }
+      ]
+    },
+    "otm:18840963": {
+      "address": "Lauriston Road, London, E9",
+      "price": 1750000,
+      "score": 52,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1750000
+        }
+      ]
+    },
+    "otm:18416889": {
+      "address": "Charlton Place, Angel, N1",
+      "price": 1600000,
+      "score": 59,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1600000
+        }
+      ]
+    },
+    "otm:16671265": {
+      "address": "Lampard Grove, London N16",
+      "price": 1800000,
+      "score": 55,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1800000
+        }
+      ]
+    },
+    "otm:17836235": {
+      "address": "Brownlow Road, London Fields, London, E8",
+      "price": 1850000,
+      "score": 58,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1850000
+        }
+      ]
+    },
+    "otm:18416707": {
+      "address": "Prince George Road, London, N16",
+      "price": 1250000,
+      "score": 52,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1250000
+        }
+      ]
+    },
+    "otm:17811251": {
+      "address": "Brenthouse Road, London E9",
+      "price": 1000000,
+      "score": 56,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1000000
+        }
+      ]
+    },
+    "otm:18680380": {
+      "address": "Stoke Newington Common, N16",
+      "price": 1750000,
+      "score": 57,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1750000
+        }
+      ]
+    },
+    "otm:18834737": {
+      "address": "Spencer Place, Canonbury",
+      "price": 1750000,
+      "score": -1,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1750000
+        }
+      ]
+    },
+    "otm:18340756": {
+      "address": "Bushberry Road, Hackney, London, E9",
+      "price": 1000000,
+      "score": 56,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1000000
+        }
+      ]
+    },
+    "otm:17240765": {
+      "address": "Brett Close, London N16",
+      "price": 950000,
+      "score": 56,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 950000
+        }
+      ]
+    },
+    "otm:18272475": {
+      "address": "Chantry Street, London N1",
+      "price": 1595000,
+      "score": 55,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1650000
+        },
+        {
+          "date": "2026-03-08T21:45:34.062577",
+          "price": 1595000
+        }
+      ]
+    },
+    "otm:18831543": {
+      "address": "Plimsoll Road, London, N4",
+      "price": 1485000,
+      "score": 55,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1485000
+        }
+      ]
+    },
+    "otm:15926526": {
+      "address": "London E9",
+      "price": 1400000,
+      "score": 55,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1400000
+        }
+      ]
+    },
+    "otm:18358789": {
+      "address": "Ellingfort Road, London, E8",
+      "price": 1100000,
+      "score": 58,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1150000
+        },
+        {
+          "date": "2026-03-14T16:21:12.868517",
+          "price": 1100000
+        }
+      ]
+    },
+    "otm:18511456": {
+      "address": "Keystone Crescent, Islington, London",
+      "price": 1150000,
+      "score": 54,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1250000
+        },
+        {
+          "date": "2026-03-08T21:45:34.062577",
+          "price": 1150000
+        }
+      ]
+    },
+    "otm:18684182": {
+      "address": "Cruden Street, Angel, Islington, London",
+      "price": 1500000,
+      "score": 53,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1500000
+        }
+      ]
+    },
+    "otm:18163914": {
+      "address": "Isabella Road, London, E9",
+      "price": 1200000,
+      "score": 51,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1200000
+        }
+      ]
+    },
+    "otm:18183059": {
+      "address": "Belgrade Road, N16, Stoke Newington, London, N16",
+      "price": 1050000,
+      "score": 52,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1150000
+        },
+        {
+          "date": "2026-03-08T21:45:34.062577",
+          "price": 1050000
+        }
+      ]
+    },
+    "otm:17033455": {
+      "address": "Brooke Road, London, N16",
+      "price": 1150000,
+      "score": 52,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1150000
+        }
+      ]
+    },
+    "otm:18258566": {
+      "address": "Battledean Road, Highbury, London, N5",
+      "price": 2000000,
+      "score": 51,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 2000000
+        }
+      ]
+    },
+    "otm:18881654": {
+      "address": "Adley Street, Lower Clapton, London, E5",
+      "price": 1200000,
+      "score": 51,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1200000
+        }
+      ]
+    },
+    "otm:17793786": {
+      "address": "Brenthouse Road, London, E9",
+      "price": 1000000,
+      "score": 51,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1000000
+        }
+      ]
+    },
+    "otm:18751760": {
+      "address": "Carysfort Road, Stoke Newington",
+      "price": 1850000,
+      "score": 50,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1850000
+        }
+      ]
+    },
+    "otm:18429267": {
+      "address": "Chelmer Road, London, E9",
+      "price": 900000,
+      "score": 49,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 900000
+        }
+      ]
+    },
+    "otm:18600206": {
+      "address": "Oriel Road, London",
+      "price": 875000,
+      "score": 47,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 875000
+        }
+      ]
+    },
+    "otm:17783541": {
+      "address": "Allerton Road, London",
+      "price": 1995000,
+      "score": 47,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1995000
+        }
+      ]
+    },
+    "otm:14669514": {
+      "address": "Kenworthy Road, Hackney, E9",
+      "price": 800000,
+      "score": 47,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 800000
+        }
+      ]
+    },
+    "otm:18176308": {
+      "address": "Cadogan Terrace, London, E9",
+      "price": 1575000,
+      "score": 46,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1575000
+        }
+      ]
+    },
+    "otm:18647561": {
+      "address": "Englefield Road, N1, De Beauvoir Town, London, N1",
+      "price": 1750000,
+      "score": 46,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 2000000
+        },
+        {
+          "date": "2026-03-10T21:55:01.186395",
+          "price": 1750000
+        }
+      ]
+    },
+    "otm:18024424": {
+      "address": "Bethune Road, London, N16",
+      "price": 1750000,
+      "score": 46,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1750000
+        }
+      ]
+    },
+    "otm:18856181": {
+      "address": "Garden Place, London E8",
+      "price": 850000,
+      "score": -1,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 880000
+        },
+        {
+          "date": "2026-03-17T21:23:46.645678",
+          "price": 850000
+        }
+      ]
+    },
+    "otm:15810202": {
+      "address": "Northwold Road, Stoke Newington",
+      "price": 1190000,
+      "score": 45,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1190000
+        }
+      ]
+    },
+    "otm:18641303": {
+      "address": "Fleetwood Street, London N16",
+      "price": 1475000,
+      "score": 45,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1475000
+        }
+      ]
+    },
+    "otm:17414983": {
+      "address": "Sydner Road, London N16",
+      "price": 1135000,
+      "score": 40,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1135000
+        }
+      ]
+    },
+    "otm:18422668": {
+      "address": "Hawksley Road, London, N16",
+      "price": 1350000,
+      "score": 44,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1350000
+        }
+      ]
+    },
+    "otm:18468526": {
+      "address": "Springdale Road, Stoke Newington, London, N16",
+      "price": 1750000,
+      "score": 44,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1750000
+        }
+      ]
+    },
+    "otm:14476078": {
+      "address": "Rydon Street, Arlington Conservation Area, Islington, London",
+      "price": 1750000,
+      "score": 43,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1750000
+        }
+      ]
+    },
+    "otm:18451568": {
+      "address": "Union Wharf, Arlington Avenue, Islington, London",
+      "price": 1750000,
+      "score": 42,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1750000
+        }
+      ]
+    },
+    "otm:18241288": {
+      "address": "Balfe Street, Islington, London",
+      "price": 1600000,
+      "score": 41,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1600000
+        }
+      ]
+    },
+    "otm:18374633": {
+      "address": "Queen Elizabeth's Walk, London, N16",
+      "price": 1600000,
+      "score": 41,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1600000
+        }
+      ]
+    },
+    "otm:18759886": {
+      "address": "Warneford Street, London, United Kingdom, E9",
+      "price": 2000000,
+      "score": 40,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 2000000
+        }
+      ]
+    },
+    "otm:17970139": {
+      "address": "Danesdale Road, Victoria Park, London, E9",
+      "price": 1425000,
+      "score": 39,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1425000
+        }
+      ]
+    },
+    "otm:18393643": {
+      "address": "., London N16",
+      "price": 1200000,
+      "score": 32,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1200000
+        }
+      ]
+    },
+    "otm:18666422": {
+      "address": "Middleton Road, London, E8",
+      "price": 1400000,
+      "score": 42,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1500000
+        },
+        {
+          "date": "2026-03-08T21:45:34.062577",
+          "price": 1400000
+        }
+      ]
+    },
+    "otm:18096794": {
+      "address": "Lorenzo Street, London, WC1X",
+      "price": 2000000,
+      "score": 38,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 2000000
+        }
+      ]
+    },
+    "otm:18254552": {
+      "address": "Rotherfield Street, Islington, London, N1",
+      "price": 1850000,
+      "score": 37,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1850000
+        }
+      ]
+    },
+    "otm:4967951": {
+      "address": "Queen Anne Road, London E9",
+      "price": 1400000,
+      "score": 37,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1500000
+        },
+        {
+          "date": "2026-03-10T21:55:01.186395",
+          "price": 1400000
+        }
+      ]
+    },
+    "otm:18798118": {
+      "address": "Hemingford Road, London, N1",
+      "price": 1750000,
+      "score": 37,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1750000
+        }
+      ]
+    },
+    "otm:18783258": {
+      "address": "Northdown Street, King's Cross, N1",
+      "price": 1495000,
+      "score": 35,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1495000
+        }
+      ]
+    },
+    "otm:18242962": {
+      "address": "Pownall Road, London E8",
+      "price": 850000,
+      "score": 35,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 850000
+        }
+      ]
+    },
+    "otm:17350459": {
+      "address": "Thornhill Road, Islington, London, N1",
+      "price": 1950000,
+      "score": 34,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1950000
+        }
+      ]
+    },
+    "otm:16571949": {
+      "address": "Anton Street, London E8",
+      "price": 800000,
+      "score": 34,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 800000
+        }
+      ]
+    },
+    "otm:18674356": {
+      "address": "Hawksley Road, Stoke Newington, N16",
+      "price": 1350000,
+      "score": 33,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1350000
+        }
+      ]
+    },
+    "otm:18680819": {
+      "address": "Kynaston Road, London N16",
+      "price": 1450000,
+      "score": 28,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1450000
+        }
+      ]
+    },
+    "otm:18575386": {
+      "address": "Jodrell Road, London, E3",
+      "price": 800000,
+      "score": 26,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 800000
+        }
+      ]
+    },
+    "otm:18389013": {
+      "address": "Baring Street, London, N1",
+      "price": 1450000,
+      "score": 25,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1450000
+        }
+      ]
+    },
+    "otm:16692503": {
+      "address": "Lode, Lode, London N16",
+      "price": 1325000,
+      "score": 14,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 1325000
+        }
+      ]
+    },
+    "otm:17340064": {
+      "address": "Barbauld Road, Stoke Newington",
+      "price": 850000,
+      "score": -1,
+      "first_seen": "2026-03-01T12:03:59.580601",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580601",
+          "price": 850000
+        }
+      ]
+    },
+    "otm:18400287": {
+      "address": "De Beauvoir Road, Islington, London, N1",
+      "price": 1150000,
+      "score": 52,
+      "first_seen": "2026-03-01T12:03:59.580863",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580863",
+          "price": 1150000
+        }
+      ]
+    },
+    "otm:18183547": {
+      "address": "Newington Green Road, London, N1",
+      "price": 1500000,
+      "score": 73,
+      "first_seen": "2026-03-01T12:03:59.580863",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580863",
+          "price": 1500000
+        }
+      ]
+    },
+    "otm:17907672": {
+      "address": "Canonbury Road, London, N1",
+      "price": 2000000,
+      "score": 60,
+      "first_seen": "2026-03-01T12:03:59.580863",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580863",
+          "price": 2000000
+        }
+      ]
+    },
+    "otm:18851244": {
+      "address": "Highbury Hill, Highbury, London, N5",
+      "price": 1750000,
+      "score": 41,
+      "first_seen": "2026-03-01T12:03:59.580863",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580863",
+          "price": 1750000
+        }
+      ]
+    },
+    "otm:13271475": {
+      "address": "Highbury Hill, London, N5",
+      "price": 1750000,
+      "score": 32,
+      "first_seen": "2026-03-01T12:03:59.580863",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580863",
+          "price": 1750000
+        }
+      ]
+    },
+    "otm:18798124": {
+      "address": "Albion Road, London N16",
+      "price": 950000,
+      "score": 18,
+      "first_seen": "2026-03-01T12:03:59.580863",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580863",
+          "price": 950000
+        }
+      ]
+    },
+    "otm:18012523": {
+      "address": "Walford Road, London N16",
+      "price": 950000,
+      "score": -1,
+      "first_seen": "2026-03-01T12:03:59.580863",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580863",
+          "price": 950000
+        }
+      ]
+    },
+    "otm:16243078": {
+      "address": "Stoke Newington High Street,, Stoke Newington, London, N16",
+      "price": 995000,
+      "score": 12,
+      "first_seen": "2026-03-01T12:03:59.580863",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580863",
+          "price": 995000
+        }
+      ]
+    },
+    "otm:16030810": {
+      "address": "Howard Road, Stoke Newington, London, N16",
+      "price": 850000,
+      "score": 45,
+      "first_seen": "2026-03-01T12:03:59.580863",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580863",
+          "price": 850000
+        }
+      ]
+    },
+    "otm:18686192": {
+      "address": "Darenth Road, Stamford Hill, N16",
+      "price": 1850000,
+      "score": 21,
+      "first_seen": "2026-03-01T12:03:59.580863",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580863",
+          "price": 1850000
+        }
+      ]
+    },
+    "otm:18363526": {
+      "address": "Noble Mews, Albion Road, Stoke Newington, London, N16",
+      "price": 940000,
+      "score": 24,
+      "first_seen": "2026-03-01T12:03:59.580863",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580863",
+          "price": 940000
+        }
+      ]
+    },
+    "otm:18632198": {
+      "address": "Queensbridge Road, E8",
+      "price": 1600000,
+      "score": 24,
+      "first_seen": "2026-03-01T12:03:59.580863",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580863",
+          "price": 1600000
+        }
+      ]
+    },
+    "otm:18585669": {
+      "address": "Shacklewell Lane, London E8",
+      "price": 1700000,
+      "score": 45,
+      "first_seen": "2026-03-01T12:03:59.580863",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580863",
+          "price": 1700000
+        }
+      ]
+    },
+    "otm:18547673": {
+      "address": "Shacklewell Lane, London, E8 2BZ",
+      "price": 1195000,
+      "score": 31,
+      "first_seen": "2026-03-01T12:03:59.580863",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580863",
+          "price": 1195000
+        }
+      ]
+    },
+    "otm:18868960": {
+      "address": "Amhurst Road, London E8",
+      "price": 950000,
+      "score": -1,
+      "first_seen": "2026-03-01T12:03:59.580863",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580863",
+          "price": 950000
+        }
+      ]
+    },
+    "otm:18133535": {
+      "address": "Shore Road, London E9",
+      "price": 1050000,
+      "score": -1,
+      "first_seen": "2026-03-01T12:03:59.580863",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580863",
+          "price": 1050000
+        }
+      ]
+    },
+    "otm:18644103": {
+      "address": "Christchurch Square, London E9",
+      "price": 1200000,
+      "score": -1,
+      "first_seen": "2026-03-01T12:03:59.580863",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580863",
+          "price": 1200000
+        }
+      ]
+    },
+    "otm:15927266": {
+      "address": "Cassland Road, London, E9",
+      "price": 1950000,
+      "score": 54,
+      "first_seen": "2026-03-01T12:03:59.580863",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580863",
+          "price": 1950000
+        }
+      ]
+    },
+    "otm:17991722": {
+      "address": "Victoria Park Road, London E9",
+      "price": 2000000,
+      "score": 46,
+      "first_seen": "2026-03-01T12:03:59.580863",
+      "price_history": [
+        {
+          "date": "2026-03-01T12:03:59.580863",
+          "price": 2000000
+        }
+      ]
+    },
+    "otm:18909583": {
+      "address": "Wilmer Place, London, N16",
+      "price": 1300000,
+      "score": 54,
+      "first_seen": "2026-03-02T22:12:45.929325",
+      "price_history": [
+        {
+          "date": "2026-03-02T22:12:45.929325",
+          "price": 1300000
+        }
+      ]
+    },
+    "otm:18910228": {
+      "address": "Eleanor Road, London E8",
+      "price": 1400000,
+      "score": 47,
+      "first_seen": "2026-03-02T22:12:45.929325",
+      "price_history": [
+        {
+          "date": "2026-03-02T22:12:45.929325",
+          "price": 1400000
+        }
+      ]
+    },
+    "otm:18907441": {
+      "address": "Sandringham Road, London E8",
+      "price": 950000,
+      "score": 45,
+      "first_seen": "2026-03-02T22:12:45.929325",
+      "price_history": [
+        {
+          "date": "2026-03-02T22:12:45.929325",
+          "price": 950000
+        }
+      ]
+    },
+    "otm:18930360": {
+      "address": "Leconfield Road, London, N5",
+      "price": 1750000,
+      "score": 56,
+      "first_seen": "2026-03-08T21:45:34.062577",
+      "price_history": [
+        {
+          "date": "2026-03-08T21:45:34.062577",
+          "price": 1750000
+        }
+      ]
+    },
+    "otm:18955581": {
+      "address": "Windus Road, London N16",
+      "price": 1000000,
+      "score": 54,
+      "first_seen": "2026-03-08T21:45:34.062577",
+      "price_history": [
+        {
+          "date": "2026-03-08T21:45:34.062577",
+          "price": 1000000
+        }
+      ]
+    },
+    "otm:18943080": {
+      "address": "Albion Terrace, London, E8",
+      "price": 1350000,
+      "score": 57,
+      "first_seen": "2026-03-08T21:45:34.062577",
+      "price_history": [
+        {
+          "date": "2026-03-08T21:45:34.062577",
+          "price": 1350000
+        }
+      ]
+    },
+    "otm:18943269": {
+      "address": "Islington Park Mews, London",
+      "price": 1100000,
+      "score": 46,
+      "first_seen": "2026-03-08T21:45:34.062577",
+      "price_history": [
+        {
+          "date": "2026-03-08T21:45:34.062577",
+          "price": 1100000
+        }
+      ]
+    },
+    "otm:18948500": {
+      "address": "Brooke Road, London, N16",
+      "price": 1799000,
+      "score": 39,
+      "first_seen": "2026-03-08T21:45:34.062577",
+      "price_history": [
+        {
+          "date": "2026-03-08T21:45:34.062577",
+          "price": 1799000
+        }
+      ]
+    },
+    "otm:18932084": {
+      "address": "Pownall Road, London E8",
+      "price": 825000,
+      "score": 38,
+      "first_seen": "2026-03-08T21:45:34.062577",
+      "price_history": [
+        {
+          "date": "2026-03-08T21:45:34.062577",
+          "price": 850000
+        },
+        {
+          "date": "2026-03-19T17:03:12.028453",
+          "price": 825000
+        }
+      ]
+    },
+    "otm:18958632": {
+      "address": "Highbury Hill, London, N5",
+      "price": 1850000,
+      "score": 34,
+      "first_seen": "2026-03-08T21:45:34.062577",
+      "price_history": [
+        {
+          "date": "2026-03-08T21:45:34.062577",
+          "price": 1850000
+        }
+      ]
+    },
+    "otm:15989045": {
+      "address": "De Beauvoir Road, Islington, London, N1",
+      "price": 1450000,
+      "score": 33,
+      "first_seen": "2026-03-08T21:45:34.062577",
+      "price_history": [
+        {
+          "date": "2026-03-08T21:45:34.062577",
+          "price": 1450000
+        }
+      ]
+    },
+    "otm:18967156": {
+      "address": "Belgrade Road, Stoke Newington, N16",
+      "price": 1250000,
+      "score": 69,
+      "first_seen": "2026-03-10T21:55:01.186395",
+      "price_history": [
+        {
+          "date": "2026-03-10T21:55:01.186395",
+          "price": 1250000
+        }
+      ]
+    },
+    "otm:18980783": {
+      "address": "Linton Street, Islington, London",
+      "price": 1750000,
+      "score": 52,
+      "first_seen": "2026-03-10T21:55:01.186395",
+      "price_history": [
+        {
+          "date": "2026-03-10T21:55:01.186395",
+          "price": 1750000
+        }
+      ]
+    },
+    "otm:18970931": {
+      "address": "Compton Avenue, Canonbury, Islington, London",
+      "price": 2000000,
+      "score": 45,
+      "first_seen": "2026-03-10T21:55:01.186395",
+      "price_history": [
+        {
+          "date": "2026-03-10T21:55:01.186395",
+          "price": 2000000
+        }
+      ]
+    },
+    "otm:18966967": {
+      "address": "Leswin Road, London, N16",
+      "price": 1700000,
+      "score": 45,
+      "first_seen": "2026-03-10T21:55:01.186395",
+      "price_history": [
+        {
+          "date": "2026-03-10T21:55:01.186395",
+          "price": 1700000
+        }
+      ]
+    },
+    "otm:18977245": {
+      "address": "De Beauvoir Road, N1, Islington, London, N1",
+      "price": 1950000,
+      "score": 34,
+      "first_seen": "2026-03-10T21:55:01.186395",
+      "price_history": [
+        {
+          "date": "2026-03-10T21:55:01.186395",
+          "price": 1950000
+        }
+      ]
+    },
+    "otm:18980491": {
+      "address": "Green Lanes, London N4",
+      "price": 1700000,
+      "score": 21,
+      "first_seen": "2026-03-10T21:55:01.186395",
+      "price_history": [
+        {
+          "date": "2026-03-10T21:55:01.186395",
+          "price": 1700000
+        }
+      ]
+    },
+    "otm:18740846": {
+      "address": "St. Mark's Rise, London, E8",
+      "price": 1250000,
+      "score": -1,
+      "first_seen": "2026-03-10T21:55:01.186395",
+      "price_history": [
+        {
+          "date": "2026-03-10T21:55:01.186395",
+          "price": 1250000
+        }
+      ]
+    },
+    "otm:18995323": {
+      "address": "Northwold Road, London, N16",
+      "price": 1500000,
+      "score": 67,
+      "first_seen": "2026-03-14T16:21:12.868517",
+      "price_history": [
+        {
+          "date": "2026-03-14T16:21:12.868517",
+          "price": 1500000
+        }
+      ]
+    },
+    "otm:11342258": {
+      "address": "Halliford Street, Islington, London",
+      "price": 1695000,
+      "score": 63,
+      "first_seen": "2026-03-14T16:21:12.868517",
+      "price_history": [
+        {
+          "date": "2026-03-14T16:21:12.868517",
+          "price": 1695000
+        }
+      ]
+    },
+    "otm:19005669": {
+      "address": "Oldhill Street, London, N16",
+      "price": 975000,
+      "score": 58,
+      "first_seen": "2026-03-14T16:21:12.868517",
+      "price_history": [
+        {
+          "date": "2026-03-14T16:21:12.868517",
+          "price": 975000
+        }
+      ]
+    },
+    "otm:17615805": {
+      "address": "Prince George Road, London, N16",
+      "price": 1175000,
+      "score": 57,
+      "first_seen": "2026-03-14T16:21:12.868517",
+      "price_history": [
+        {
+          "date": "2026-03-14T16:21:12.868517",
+          "price": 1175000
+        }
+      ]
+    },
+    "otm:19013384": {
+      "address": "Lansdowne Drive, London E8",
+      "price": 1800000,
+      "score": 54,
+      "first_seen": "2026-03-14T16:21:12.868517",
+      "price_history": [
+        {
+          "date": "2026-03-14T16:21:12.868517",
+          "price": 1800000
+        }
+      ]
+    },
+    "otm:19005363": {
+      "address": "Southborough Road, London, E9",
+      "price": 2000000,
+      "score": 50,
+      "first_seen": "2026-03-14T16:21:12.868517",
+      "price_history": [
+        {
+          "date": "2026-03-14T16:21:12.868517",
+          "price": 2000000
+        }
+      ]
+    },
+    "otm:18995737": {
+      "address": "Elton Place, London, N16",
+      "price": 850000,
+      "score": 49,
+      "first_seen": "2026-03-14T16:21:12.868517",
+      "price_history": [
+        {
+          "date": "2026-03-14T16:21:12.868517",
+          "price": 850000
+        }
+      ]
+    },
+    "otm:18998591": {
+      "address": "Harcombe Road, London, N16",
+      "price": 1350000,
+      "score": 44,
+      "first_seen": "2026-03-14T16:21:12.868517",
+      "price_history": [
+        {
+          "date": "2026-03-14T16:21:12.868517",
+          "price": 1350000
+        }
+      ]
+    },
+    "otm:19001365": {
+      "address": "Chelmer Road, London, E9",
+      "price": 865000,
+      "score": 36,
+      "first_seen": "2026-03-14T16:21:12.868517",
+      "price_history": [
+        {
+          "date": "2026-03-14T16:21:12.868517",
+          "price": 865000
+        }
+      ]
+    },
+    "otm:19040930": {
+      "address": "Lidfield Road, Newington Green, Hackney, London",
+      "price": 1650000,
+      "score": 59,
+      "first_seen": "2026-03-17T21:23:46.645456",
+      "price_history": [
+        {
+          "date": "2026-03-17T21:23:46.645456",
+          "price": 1650000
+        }
+      ]
+    },
+    "otm:18638198": {
+      "address": "Hemingford Road, London N1",
+      "price": 1700000,
+      "score": 56,
+      "first_seen": "2026-03-17T21:23:46.645456",
+      "price_history": [
+        {
+          "date": "2026-03-17T21:23:46.645456",
+          "price": 1700000
+        }
+      ]
+    },
+    "otm:19021872": {
+      "address": "Dynevor Road, London, N16",
+      "price": 1500000,
+      "score": 56,
+      "first_seen": "2026-03-17T21:23:46.645456",
+      "price_history": [
+        {
+          "date": "2026-03-17T21:23:46.645456",
+          "price": 1500000
+        }
+      ]
+    },
+    "otm:19032717": {
+      "address": "Balfe Street, King's Cross, London, N1",
+      "price": 1500000,
+      "score": 43,
+      "first_seen": "2026-03-17T21:23:46.645456",
+      "price_history": [
+        {
+          "date": "2026-03-17T21:23:46.645456",
+          "price": 1500000
+        }
+      ]
+    },
+    "otm:19022076": {
+      "address": "Brooke Road, Hackney, London, N16",
+      "price": 1799000,
+      "score": 42,
+      "first_seen": "2026-03-17T21:23:46.645456",
+      "price_history": [
+        {
+          "date": "2026-03-17T21:23:46.645456",
+          "price": 1799000
+        }
+      ]
+    },
+    "otm:19034983": {
+      "address": "New North Road, London, London, N1",
+      "price": 1300000,
+      "score": 24,
+      "first_seen": "2026-03-17T21:23:46.645456",
+      "price_history": [
+        {
+          "date": "2026-03-17T21:23:46.645456",
+          "price": 1300000
+        }
+      ]
+    },
+    "otm:17053296": {
+      "address": "Great Eastern Buildings, Reading Lane, Hackney, London, E8",
+      "price": 1250000,
+      "score": -1,
+      "first_seen": "2026-03-17T21:23:46.645678",
+      "price_history": [
+        {
+          "date": "2026-03-17T21:23:46.645678",
+          "price": 1250000
+        }
+      ]
+    },
+    "otm:19044354": {
+      "address": "Buckingham Road, London, N1, Islington, London, N1",
+      "price": 1300000,
+      "score": 52,
+      "first_seen": "2026-03-19T17:03:12.028453",
+      "price_history": [
+        {
+          "date": "2026-03-19T17:03:12.028453",
+          "price": 1300000
+        }
+      ]
+    },
+    "otm:19058760": {
+      "address": "Highbury Terrace Mews, Islington, N5",
+      "price": 1100000,
+      "score": 49,
+      "first_seen": "2026-03-19T17:03:12.028453",
+      "price_history": [
+        {
+          "date": "2026-03-19T17:03:12.028453",
+          "price": 1100000
+        }
+      ]
+    },
+    "otm:19055660": {
+      "address": "Downham Road, London",
+      "price": 1750000,
+      "score": 46,
+      "first_seen": "2026-03-19T17:03:12.028453",
+      "price_history": [
+        {
+          "date": "2026-03-19T17:03:12.028453",
+          "price": 1750000
+        }
+      ]
+    }
+  },
+  "last_run": "2026-03-19T17:03:12.028648",
+  "run_count": 18
+}

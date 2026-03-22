@@ -1,0 +1,65 @@
+name: Property Monitor
+
+on:
+  schedule:
+    # Mon, Wed, Fri at 07:30 UTC
+    - cron: '30 7 * * 1'
+    - cron: '30 7 * * 3'
+    - cron: '30 7 * * 5'
+  workflow_dispatch:  # manual trigger from GitHub Actions UI
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Restore state files
+        run: |
+          cp state/state.json . 2>/dev/null || echo '{"seen_ids":[],"price_history":{},"run_count":0}' > state.json
+          cp state/detail_cache.json . 2>/dev/null || echo '{}' > detail_cache.json
+          cp state/street_comp_cache.json . 2>/dev/null || echo '{}' > street_comp_cache.json
+          cp state/floorplan_cache.json . 2>/dev/null || echo '{}' > floorplan_cache.json
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install certifi
+
+      - name: Run monitor
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PM_EMAIL_FROM: ${{ secrets.PM_EMAIL_FROM }}
+          PM_EMAIL_TO: ${{ secrets.PM_EMAIL_TO }}
+          PM_SMTP_PASS: ${{ secrets.PM_SMTP_PASS }}
+        run: python3 monitor.py --all --quiet --floorplan
+
+      - name: Send email alert
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PM_EMAIL_FROM: ${{ secrets.PM_EMAIL_FROM }}
+          PM_EMAIL_TO: ${{ secrets.PM_EMAIL_TO }}
+          PM_SMTP_PASS: ${{ secrets.PM_SMTP_PASS }}
+        run: python3 email_alert.py
+
+      - name: Commit updated state
+        run: |
+          mkdir -p state
+          cp state.json state/state.json
+          cp detail_cache.json state/detail_cache.json
+          cp street_comp_cache.json state/street_comp_cache.json
+          cp floorplan_cache.json state/floorplan_cache.json
+          git config user.name "property-monitor-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add state/
+          git diff --staged --quiet || git commit -m "chore: update state $(date -u +%Y-%m-%dT%H:%M)"
+          git push
+name: Property Monitor

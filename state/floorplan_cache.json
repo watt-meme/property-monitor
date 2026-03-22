@@ -1734,5 +1734,38 @@
     "garden_assessment": "medium",
     "verdict": "mixed",
     "summary": "Good room count and generous main bedroom (19x14ft), but the ground floor layout is problematic \u2014 the bedroom sits between kitchen and reception, severing the living spaces. Dual kitchens and disconnected floors suggest awkward conversion history requiring significant replanning."
+  },
+  "https://media.onthemarket.com/properties/19068861/1602402823/floor-plan-0-1024x1024.jpg": {
+    "bedrooms_by_floor": {
+      "basement": 0,
+      "lower_ground": 0,
+      "ground": 0,
+      "first": 3,
+      "second": 1,
+      "third": 0
+    },
+    "total_above_ground_beds": 4,
+    "basement_rooms": [
+      "bathroom",
+      "utility"
+    ],
+    "room_concerns": [
+      "Bathroom on first floor is very small at 6'1\" x 5'11\" (1.85m x 1.81m), likely tight for a family bathroom",
+      "Second floor bedroom is modest at 11'0\" x 10'0\" (3.36m x 3.05m) and bathroom is tiny at 6'7\" x 5'4\" (2.02m x 1.63m)",
+      "Reception room is long and narrow at 32'5\" x 12'6\" (9.90m x 3.81m), limiting furniture arrangement",
+      "Basement utility room is isolated from main living floors with no direct kitchen connection",
+      "Basement bathroom (13'1\" x 6'4\") is stranded away from all bedrooms, reducing its practical utility"
+    ],
+    "main_bed_adequate": true,
+    "circulation_pct": 15,
+    "kitchen_location": "ground",
+    "kitchen_mod_difficulty": "easy",
+    "kitchen_adjacent_reception": true,
+    "through_reception": true,
+    "double_fronted": false,
+    "extension_potential": true,
+    "garden_assessment": "large",
+    "verdict": "good",
+    "summary": "Strong layout with generous 1929 sq ft across four floors, a large rear garden (~38x19ft), and open-plan kitchen/dining on the ground floor. Main weaknesses are the isolated basement utility/bathroom and the narrow proportions of the ground floor reception."
   }
 }

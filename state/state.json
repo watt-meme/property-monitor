@@ -834,13 +834,17 @@
     },
     "otm:18798118": {
       "address": "Hemingford Road, London, N1",
-      "price": 1750000,
-      "score": 37,
+      "price": 1650000,
+      "score": 41,
       "first_seen": "2026-03-01T12:03:59.580601",
       "price_history": [
         {
           "date": "2026-03-01T12:03:59.580601",
           "price": 1750000
+        },
+        {
+          "date": "2026-03-22T16:22:03.763497",
+          "price": 1650000
         }
       ]
     },
@@ -1631,7 +1635,7 @@
     "otm:19055660": {
       "address": "Downham Road, London",
       "price": 1750000,
-      "score": 46,
+      "score": 38,
       "first_seen": "2026-03-19T17:03:12.028453",
       "price_history": [
         {
@@ -1639,8 +1643,44 @@
           "price": 1750000
         }
       ]
+    },
+    "otm:19068861": {
+      "address": "Ardilaun Road, London, N5",
+      "price": 2000000,
+      "score": 64,
+      "first_seen": "2026-03-22T16:22:03.763497",
+      "price_history": [
+        {
+          "date": "2026-03-22T16:22:03.763497",
+          "price": 2000000
+        }
+      ]
+    },
+    "otm:19060772": {
+      "address": "Belfast Road, Stoke Newington, London, N16",
+      "price": 1275000,
+      "score": 48,
+      "first_seen": "2026-03-22T16:22:03.763497",
+      "price_history": [
+        {
+          "date": "2026-03-22T16:22:03.763497",
+          "price": 1275000
+        }
+      ]
+    },
+    "otm:19069863": {
+      "address": "Stellman Close, London E5",
+      "price": 800000,
+      "score": 33,
+      "first_seen": "2026-03-22T16:22:03.763497",
+      "price_history": [
+        {
+          "date": "2026-03-22T16:22:03.763497",
+          "price": 800000
+        }
+      ]
     }
   },
-  "last_run": "2026-03-19T17:03:12.028648",
-  "run_count": 18
+  "last_run": "2026-03-22T16:22:03.763585",
+  "run_count": 19
 }

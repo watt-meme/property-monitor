@@ -480,5 +480,12 @@
     "ppsf": null,
     "date": "2026-03-19T17:03:12.004536",
     "sales_count": 0
+  },
+  "ardilaun road|n5": {
+    "ppsf": null,
+    "date": "2026-03-22T16:21:54.184053",
+    "sales_count": 1,
+    "street": "Ardilaun Road",
+    "outcode": "N5"
   }
 }

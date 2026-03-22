@@ -2,16 +2,23 @@ name: Property Monitor
 
 on:
   schedule:
-    # Mon, Wed, Fri at 07:30 UTC
+    # Mon, Wed, Fri at 07:30 UTC (08:30 BST / 07:30 GMT)
     - cron: '30 7 * * 1'
     - cron: '30 7 * * 3'
     - cron: '30 7 * * 5'
-  workflow_dispatch:  # manual trigger from GitHub Actions UI
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   run:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    env:
+      CI: true
 
     steps:
       - name: Checkout repo
@@ -21,7 +28,7 @@ jobs:
 
       - name: Restore state files
         run: |
-          cp state/state.json . 2>/dev/null || echo '{"seen_ids":[],"price_history":{},"run_count":0}' > state.json
+          cp state/state.json . 2>/dev/null || echo '{"seen_ids":{},"last_run":null,"run_count":0}' > state.json
           cp state/detail_cache.json . 2>/dev/null || echo '{}' > detail_cache.json
           cp state/street_comp_cache.json . 2>/dev/null || echo '{}' > street_comp_cache.json
           cp state/floorplan_cache.json . 2>/dev/null || echo '{}' > floorplan_cache.json
@@ -50,7 +57,12 @@ jobs:
           PM_SMTP_PASS: ${{ secrets.PM_SMTP_PASS }}
         run: python3 email_alert.py
 
-      - name: Commit updated state
+      - name: Publish dashboard to GitHub Pages
+        run: |
+          mkdir -p docs
+          cp alerts/latest.html docs/index.html
+
+      - name: Commit updated state and dashboard
         run: |
           mkdir -p state
           cp state.json state/state.json
@@ -59,6 +71,6 @@ jobs:
           cp floorplan_cache.json state/floorplan_cache.json
           git config user.name "property-monitor-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add state/
-          git diff --staged --quiet || git commit -m "chore: update state $(date -u +%Y-%m-%dT%H:%M)"
+          git add state/ docs/
+          git diff --staged --quiet || git commit -m "chore: update state and dashboard $(date -u +%Y-%m-%dT%H:%M)"
           git push

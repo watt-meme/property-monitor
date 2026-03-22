@@ -248,8 +248,11 @@ def main():
             try:
                 dt_first = datetime.fromisoformat(first_seen)
                 dt_last = datetime.fromisoformat(last_run)
-                # New = first seen within 10 minutes of last run timestamp
-                if -60 < (dt_first - dt_last).total_seconds() < 600:
+                # New = first seen within 30 min either side of last_run
+                # (CI: monitor writes state then email_alert runs; clocks match
+                # but allow generous window for slow runs and timing skew)
+                delta = (dt_first - dt_last).total_seconds()
+                if -1800 < delta < 1800:
                     new_entries.append(entry)
             except ValueError:
                 pass

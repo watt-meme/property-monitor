@@ -30,7 +30,7 @@ from datetime import datetime
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from otm import search, enrich_detail, save_detail_cache
+from otm import search, enrich_detail, save_detail_cache, prune_detail_cache
 from scorer import score_all, score_property
 from state import load_state, save_state, get_new_properties, mark_seen, get_price_history
 from output import generate_html, write_output
@@ -67,9 +67,13 @@ def main():
         print("\nPhase 1: Search OTM...")
     listings = search()
 
+    # Guard: zero listings almost certainly means OTM blocked/changed/is down
     if not listings:
-        print("No listings found.")
-        return
+        print("WARNING: 0 listings returned from OTM. Possible block or outage. Aborting.")
+        sys.exit(2)  # non-zero exit so GitHub Actions marks the step failed
+
+    if len(listings) < 10:
+        print(f"WARNING: Only {len(listings)} listings returned - possible partial block.")
 
     # Phase 2: Initial scoring (includes dedup)
     scored, excluded = score_all(listings)
@@ -184,14 +188,19 @@ def main():
     if not args.quiet:
         print(f"\nOutput: {latest_path}")
 
+    # Prune stale detail cache entries
+    pruned = prune_detail_cache()
+    if pruned and not args.quiet:
+        print(f"  Pruned {pruned} stale entries from detail cache")
+
     # Update state (mark seen + record price history)
     if not args.dry_run:
         mark_seen(scored, state)
         mark_seen(excluded, state)
         save_state(state)
 
-    # Open in browser
-    if output_scored and not args.quiet and sys.stdout.isatty():
+    # Open in browser (local only, not in CI)
+    if output_scored and not args.quiet and sys.stdout.isatty() and os.environ.get("CI") != "true":
         try:
             import subprocess
             subprocess.run(["open", latest_path], check=False)

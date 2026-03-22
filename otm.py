@@ -250,6 +250,27 @@ def enrich_detail(listing: dict) -> dict:
     return listing
 
 
+def prune_detail_cache(max_age_days: int = DETAIL_CACHE_MAX_AGE_DAYS) -> int:
+    """Remove cache entries older than max_age_days. Returns count removed."""
+    cache = _load_detail_cache()
+    global _detail_cache_dirty
+    cutoff = datetime.now()
+    to_delete = []
+    for lid, entry in cache.items():
+        cached_date = entry.get("_cached", "")
+        try:
+            age = (cutoff - datetime.fromisoformat(cached_date)).days
+            if age > max_age_days:
+                to_delete.append(lid)
+        except (ValueError, TypeError):
+            to_delete.append(lid)  # malformed entry — remove it
+    for lid in to_delete:
+        del cache[lid]
+    if to_delete:
+        _detail_cache_dirty = True
+    return len(to_delete)
+
+
 def save_detail_cache() -> None:
     """Call after all detail enrichment is done."""
     _save_detail_cache()

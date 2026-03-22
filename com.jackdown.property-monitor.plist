@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  com.jackdown.property-monitor.plist
+  Runs property monitor daily at 07:30.
+
+  INSTALL:
+    cp ~/Desktop/property-monitor/com.jackdown.property-monitor.plist ~/Library/LaunchAgents/
+    launchctl load ~/Library/LaunchAgents/com.jackdown.property-monitor.plist
+
+  TEST (runs immediately):
+    launchctl start com.jackdown.property-monitor
+
+  LOGS:
+    tail -f /Users/jackdown/Library/Logs/property-monitor.log
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.jackdown.property-monitor</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>-c</string>
+    <string>source ~/.property-monitor-env 2>/dev/null || true; cd ~/Desktop/property-monitor &amp;&amp; /usr/bin/python3 monitor.py --all --quiet --floorplan &gt;&gt;/Users/jackdown/Library/Logs/property-monitor.log 2&gt;&amp;1 &amp;&amp; /usr/bin/python3 email_alert.py &gt;&gt;/Users/jackdown/Library/Logs/property-monitor.log 2&gt;&amp;1</string>
+  </array>
+
+  <!-- Run daily at 07:30 -->
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key><integer>7</integer>
+    <key>Minute</key><integer>30</integer>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>/Users/jackdown/Library/Logs/property-monitor.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/Users/jackdown/Library/Logs/property-monitor-error.log</string>
+
+  <key>RunAtLoad</key>
+  <false/>
+</dict>
+</plist>

@@ -128,6 +128,13 @@ def _build_html_email(new_listings: list[dict], recent_reductions: list[dict],
 <table style="border-collapse:collapse;width:100%;">{r_rows}</table>
 </div>"""
 
+    dashboard_note = (
+        '<div style="margin-top:16px;padding-top:12px;border-top:1px solid #eee;">'
+        '<p style="font-size:11px;color:#888;">Full interactive dashboard attached as '
+        '<strong>property-monitor.html</strong> — open in any browser.</p>'
+        '</div>'
+    )
+
     return f"""
 <html><body style="font-family:-apple-system,sans-serif;max-width:640px;margin:auto;color:#333;padding:16px;">
 {test_banner}
@@ -135,10 +142,11 @@ def _build_html_email(new_listings: list[dict], recent_reductions: list[dict],
 <p style="color:#666;font-size:12px;margin:4px 0 12px;">{now} &#183; {all_count} active &#183; run #{run_count}</p>
 {new_section}
 {reduction_section}
+{dashboard_note}
 </body></html>"""
 
 
-def send_email(subject: str, html_body: str) -> None:
+def send_email(subject: str, html_body: str, attach_html: Path = None) -> None:
     if not EMAIL_FROM or not EMAIL_TO or not SMTP_PASS:
         print("Email not configured. Set PM_EMAIL_FROM, PM_EMAIL_TO, PM_SMTP_PASS.")
         print("Subject would be:", subject)
@@ -171,6 +179,16 @@ def send_email(subject: str, html_body: str) -> None:
     msg["To"]      = recipient
     msg.set_content("Property Monitor alert (HTML email).")
     msg.add_alternative(html_body, subtype="html")
+
+    # Attach full dashboard HTML if available
+    if attach_html and attach_html.exists():
+        msg.add_attachment(
+            attach_html.read_bytes(),
+            maintype="text",
+            subtype="html",
+            filename="property-monitor.html",
+        )
+        print(f"  Attaching dashboard ({attach_html.stat().st_size // 1024}KB)")
 
     try:
         with smtplib.SMTP(SMTP_HOST, SMTP_PORT, timeout=30) as server:
@@ -238,7 +256,7 @@ def main():
 
         subject = f"Property Monitor: TEST - top {len(test_listings)} listings"
         html = _build_html_email(test_listings, reductions, len(seen), run_count, is_test=True)
-        send_email(subject, html)
+        send_email(subject, html, attach_html=LATEST_HTML)
         return
 
     new_entries = []
@@ -274,7 +292,7 @@ def main():
         subject = f"Property Monitor: {n_new} new + {n_red} reduction{'s' if n_red != 1 else ''}"
 
     html = _build_html_email(new_entries[:args.top], reductions, len(seen), run_count)
-    send_email(subject, html)
+    send_email(subject, html, attach_html=LATEST_HTML)
 
 
 if __name__ == "__main__":

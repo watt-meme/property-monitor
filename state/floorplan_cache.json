@@ -1767,5 +1767,43 @@
     "garden_assessment": "large",
     "verdict": "good",
     "summary": "Strong layout with generous 1929 sq ft across four floors, a large rear garden (~38x19ft), and open-plan kitchen/dining on the ground floor. Main weaknesses are the isolated basement utility/bathroom and the narrow proportions of the ground floor reception."
+  },
+  "https://media.onthemarket.com/properties/16809248/1602869863/floor-plan-0-1024x1024.jpg": {
+    "bedrooms_by_floor": {
+      "basement": 0,
+      "lower_ground": 1,
+      "ground": 0,
+      "first": 3,
+      "second": 2,
+      "third": 0
+    },
+    "total_above_ground_beds": 5,
+    "basement_rooms": [
+      "bedroom",
+      "en-suite",
+      "dining room / kitchen",
+      "store",
+      "patio"
+    ],
+    "room_concerns": [
+      "Lower ground bedroom en-suite is extremely narrow at 8'6\" x 3'3\" (2.60m x 1.00m) \u2014 barely functional",
+      "Second floor bathroom is very small at 8'2\" x 5'9\" (2.50m x 1.75m) serving two bedrooms",
+      "Second floor Bedroom 2 is narrow at 17'7\" x 9'11\" (5.36m x 3.03m) \u2014 under 10ft wide",
+      "First floor shower room is compact at 6'5\" x 5'1\" (1.95m x 1.55m)",
+      "Kitchen/Dining on lower ground floor is separated from ground floor reception, making kitchen-reception flow poor",
+      "Mezzanine level bathroom at 8'2\" x 5'9\" feels disconnected from main floor arrangement",
+      "Front garden area (19'6\" x 18'1\") partially consumed by steps/access, limiting usable space"
+    ],
+    "main_bed_adequate": true,
+    "circulation_pct": 18,
+    "kitchen_location": "lower_ground",
+    "kitchen_mod_difficulty": "hard",
+    "kitchen_adjacent_reception": false,
+    "through_reception": true,
+    "double_fronted": false,
+    "extension_potential": true,
+    "garden_assessment": "large",
+    "verdict": "mixed",
+    "summary": "A spacious 5-bedroom Victorian terrace with a generous rear garden and large reception room, but the kitchen is stranded on the lower ground floor away from the main reception, a fundamental layout flaw that would require significant replanning to resolve."
   }
 }

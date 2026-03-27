@@ -210,13 +210,17 @@
     },
     "otm:17319626": {
       "address": "Allerton Road, London N16",
-      "price": 1950000,
-      "score": 59,
+      "price": 1750000,
+      "score": 62,
       "first_seen": "2026-03-01T12:03:59.580601",
       "price_history": [
         {
           "date": "2026-03-01T12:03:59.580601",
           "price": 1950000
+        },
+        {
+          "date": "2026-03-27T10:10:44.160305",
+          "price": 1750000
         }
       ]
     },
@@ -547,7 +551,7 @@
     "otm:18600206": {
       "address": "Oriel Road, London",
       "price": 875000,
-      "score": 47,
+      "score": 45,
       "first_seen": "2026-03-01T12:03:59.580601",
       "price_history": [
         {
@@ -558,13 +562,17 @@
     },
     "otm:17783541": {
       "address": "Allerton Road, London",
-      "price": 1995000,
+      "price": 1750000,
       "score": 47,
       "first_seen": "2026-03-01T12:03:59.580601",
       "price_history": [
         {
           "date": "2026-03-01T12:03:59.580601",
           "price": 1995000
+        },
+        {
+          "date": "2026-03-27T10:10:44.160305",
+          "price": 1750000
         }
       ]
     },
@@ -1731,8 +1739,128 @@
           "price": 1250000
         }
       ]
+    },
+    "otm:19099540": {
+      "address": "Canonbury Road, London, N1",
+      "price": 1900000,
+      "score": 63,
+      "first_seen": "2026-03-27T10:10:44.160305",
+      "price_history": [
+        {
+          "date": "2026-03-27T10:10:44.160305",
+          "price": 1900000
+        }
+      ]
+    },
+    "otm:19115156": {
+      "address": "Barnsbury Terrace, London, N1",
+      "price": 2000000,
+      "score": 62,
+      "first_seen": "2026-03-27T10:10:44.160305",
+      "price_history": [
+        {
+          "date": "2026-03-27T10:10:44.160305",
+          "price": 2000000
+        }
+      ]
+    },
+    "otm:19103280": {
+      "address": "Rydon Street, London, N1",
+      "price": 1850000,
+      "score": 53,
+      "first_seen": "2026-03-27T10:10:44.160305",
+      "price_history": [
+        {
+          "date": "2026-03-27T10:10:44.160305",
+          "price": 1850000
+        }
+      ]
+    },
+    "otm:13640650": {
+      "address": "Farleigh Road N16, Stoke Newington",
+      "price": 2000000,
+      "score": 48,
+      "first_seen": "2026-03-27T10:10:44.160305",
+      "price_history": [
+        {
+          "date": "2026-03-27T10:10:44.160305",
+          "price": 2000000
+        }
+      ]
+    },
+    "otm:19103509": {
+      "address": "Sudeley Street, London, N1",
+      "price": 1500000,
+      "score": 45,
+      "first_seen": "2026-03-27T10:10:44.160305",
+      "price_history": [
+        {
+          "date": "2026-03-27T10:10:44.160305",
+          "price": 1500000
+        }
+      ]
+    },
+    "otm:19102769": {
+      "address": "De Beauvoir Road, London, N1",
+      "price": 2000000,
+      "score": 44,
+      "first_seen": "2026-03-27T10:10:44.160305",
+      "price_history": [
+        {
+          "date": "2026-03-27T10:10:44.160305",
+          "price": 2000000
+        }
+      ]
+    },
+    "otm:19104406": {
+      "address": "Compton Avenue, London, N1",
+      "price": 2000000,
+      "score": 37,
+      "first_seen": "2026-03-27T10:10:44.160305",
+      "price_history": [
+        {
+          "date": "2026-03-27T10:10:44.160305",
+          "price": 2000000
+        }
+      ]
+    },
+    "otm:19104105": {
+      "address": "Ritson Road, London, E8",
+      "price": 1500000,
+      "score": 36,
+      "first_seen": "2026-03-27T10:10:44.160305",
+      "price_history": [
+        {
+          "date": "2026-03-27T10:10:44.160305",
+          "price": 1500000
+        }
+      ]
+    },
+    "otm:16200943": {
+      "address": "Durley Road, Stamford Hill",
+      "price": 1800000,
+      "score": 16,
+      "first_seen": "2026-03-27T10:10:44.160305",
+      "price_history": [
+        {
+          "date": "2026-03-27T10:10:44.160305",
+          "price": 1800000
+        }
+      ]
+    },
+    "otm:19102996": {
+      "address": "Treaty Street, King's Cross, London, N1",
+      "price": 850000,
+      "score": -1,
+      "first_seen": "2026-03-27T10:10:44.160383",
+      "price_history": [
+        {
+          "date": "2026-03-27T10:10:44.160383",
+          "price": 850000
+        }
+      ]
     }
   },
-  "last_run": "2026-03-25T10:13:27.170502",
-  "run_count": 21
+  "last_run": "2026-03-27T10:10:44.160391",
+  "run_count": 22
 }

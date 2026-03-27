@@ -497,5 +497,19 @@
     "ppsf": null,
     "date": "2026-03-25T10:13:13.966389",
     "sales_count": 0
+  },
+  "barnsbury terrace|n1": {
+    "ppsf": null,
+    "date": "2026-03-27T10:10:02.351841",
+    "sales_count": 1,
+    "street": "Barnsbury Terrace",
+    "outcode": "N1"
+  },
+  "rydon street|n1": {
+    "ppsf": 1907,
+    "date": "2026-03-27T10:10:19.986130",
+    "sales_count": 2,
+    "street": "Rydon Street",
+    "outcode": "N1"
   }
 }

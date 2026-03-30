@@ -47,6 +47,7 @@ jobs:
           PM_EMAIL_FROM: ${{ secrets.PM_EMAIL_FROM }}
           PM_EMAIL_TO: ${{ secrets.PM_EMAIL_TO }}
           PM_SMTP_PASS: ${{ secrets.PM_SMTP_PASS }}
+          PM_DASHBOARD_PASS: ${{ secrets.PM_DASHBOARD_PASS }}
         run: python3 monitor.py --all --quiet --floorplan
 
       - name: Send email alert

@@ -345,18 +345,19 @@ def generate_html(scored: list[dict], excluded: list[dict], state: dict = None) 
         app_js = f.read()
 
     replacements = {
-        "__NOW__":          now,
-        "__COUNT__":        str(count),
-        "__MAX_DAYS__":     str(max_days),
-        "__STATS_BAR__":    stats_bar,
-        "__EXCL_ITEMS__":   excl_items,
-        "__EXCL_COUNT__":   str(len(excluded)),
-        "__CB_BEDS__":      cb_beds,
-        "__CB_PERIODS__":   cb_periods,
-        "__CB_QUALITIES__": cb_qualities,
-        "__AREA_OPTIONS__": area_options,
-        "__LISTINGS_JSON__":listings_json,
-        "__APP_JS__":       app_js,
+        "__NOW__":           now,
+        "__COUNT__":         str(count),
+        "__MAX_DAYS__":      str(max_days),
+        "__STATS_BAR__":     stats_bar,
+        "__EXCL_ITEMS__":    excl_items,
+        "__EXCL_COUNT__":    str(len(excluded)),
+        "__CB_BEDS__":       cb_beds,
+        "__CB_PERIODS__":    cb_periods,
+        "__CB_QUALITIES__":  cb_qualities,
+        "__AREA_OPTIONS__":  area_options,
+        "__LISTINGS_JSON__": listings_json,
+        "__APP_JS__":        app_js,
+        "__DASHBOARD_PASS__": os.environ.get("PM_DASHBOARD_PASS", ""),
     }
     for token, value in replacements.items():
         html = html.replace(token, value)

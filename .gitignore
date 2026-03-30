@@ -1,3 +1,12 @@
 alerts/
 *.pyc
 __pycache__/
+
+# Machine-specific config (keep locally, not public)
+com.jackdown.property-monitor.plist
+
+# Root-level cache files (stale duplicates; CI uses state/*.json)
+state.json
+detail_cache.json
+floorplan_cache.json
+street_comp_cache.json

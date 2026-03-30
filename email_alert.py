@@ -20,13 +20,14 @@ from email.message import EmailMessage
 from datetime import datetime, timedelta
 from pathlib import Path
 
-EMAIL_FROM = os.environ.get("PM_EMAIL_FROM", "")
-EMAIL_TO   = os.environ.get("PM_EMAIL_TO",   "")
-SMTP_HOST  = os.environ.get("PM_SMTP_HOST",  "smtp.gmail.com")
-SMTP_PORT  = int(os.environ.get("PM_SMTP_PORT", "587"))
-SMTP_USER  = os.environ.get("PM_SMTP_USER",  EMAIL_FROM)
-SMTP_PASS  = os.environ.get("PM_SMTP_PASS",  "")
-TOP_N      = 10
+EMAIL_FROM    = os.environ.get("PM_EMAIL_FROM", "")
+EMAIL_TO      = os.environ.get("PM_EMAIL_TO",   "")
+SMTP_HOST     = os.environ.get("PM_SMTP_HOST",  "smtp.gmail.com")
+SMTP_PORT     = int(os.environ.get("PM_SMTP_PORT", "587"))
+SMTP_USER     = os.environ.get("PM_SMTP_USER",  EMAIL_FROM)
+SMTP_PASS     = os.environ.get("PM_SMTP_PASS",  "")
+TOP_N         = 5
+DASHBOARD_URL = "https://watt-meme.github.io/property-monitor/"
 
 ALLOWED_SUBJECT_PREFIX = "Property Monitor:"
 MAX_BODY_SIZE = 500_000
@@ -67,41 +68,72 @@ def _reduction_badge(entry: dict) -> str:
     return ""
 
 
+def _listing_row(entry: dict, font_size: int = 20, padding: str = "8px 10px",
+                 extra_meta: str = "") -> str:
+    addr = entry.get("address", "").replace("\n", ", ")
+    price = entry.get("price", 0)
+    price_str = f"&#163;{price:,}" if price else "?"
+    score = entry.get("score", 0)
+    col = _score_colour(score)
+    reduction = _reduction_badge(entry)
+    otm_id = entry.get("otm_id", "")
+    url = f"https://www.onthemarket.com/details/{otm_id}/" if otm_id else "#"
+    area = entry.get("area_label", "")
+    meta_parts = []
+    if area:
+        meta_parts.append(area)
+    if extra_meta:
+        meta_parts.append(extra_meta)
+    meta_html = f'<div style="font-size:11px;color:#888;">{" · ".join(meta_parts)}</div>' if meta_parts else ""
+    return f"""
+<tr style="border-bottom:1px solid #f0f0f0;">
+  <td style="padding:{padding};text-align:center;font-size:{font_size}px;font-weight:700;color:{col};width:48px;">{score}</td>
+  <td style="padding:{padding};">
+    <div><a href="{url}" style="color:#1565c0;font-weight:600;text-decoration:none;">{addr}</a></div>
+    <div style="margin-top:3px;font-size:13px;font-weight:700;color:#1a237e;">{price_str}{reduction}</div>
+    {meta_html}
+  </td>
+</tr>"""
+
+
 def _build_html_email(new_listings: list[dict], recent_reductions: list[dict],
+                       recent_top_performers: list[dict],
                        all_count: int, run_count: int, is_test: bool = False) -> str:
     now = datetime.now().strftime("%A %d %B %Y, %H:%M")
     test_banner = ('<div style="background:#fff3e0;color:#e65100;padding:8px 12px;'
                    'border-radius:4px;font-size:12px;margin-bottom:12px;">'
                    '&#9888; TEST EMAIL</div>') if is_test else ""
 
+    dashboard_button = (
+        f'<div style="margin:12px 0 16px;">'
+        f'<a href="{DASHBOARD_URL}" style="display:inline-block;background:#1a237e;color:white;'
+        f'font-size:14px;font-weight:600;padding:10px 20px;border-radius:6px;text-decoration:none;">'
+        f'Open Dashboard &#8594;</a>'
+        f'</div>'
+    )
+
     new_section = ""
     if new_listings:
-        rows = ""
-        for entry in new_listings:
-            addr = entry.get("address", "").replace("\n", ", ")
-            price = entry.get("price", 0)
-            price_str = f"&#163;{price:,}" if price else "?"
-            score = entry.get("score", 0)
-            col = _score_colour(score)
-            reduction = _reduction_badge(entry)
-            otm_id = entry.get("otm_id", "")
-            url = f"https://www.onthemarket.com/details/{otm_id}/" if otm_id else "#"
-            area = entry.get("area_label", "")
-            rows += f"""
-<tr style="border-bottom:1px solid #f0f0f0;">
-  <td style="padding:8px 10px;text-align:center;font-size:20px;font-weight:700;color:{col};width:48px;">{score}</td>
-  <td style="padding:8px 10px;">
-    <div><a href="{url}" style="color:#1565c0;font-weight:600;text-decoration:none;">{addr}</a></div>
-    <div style="margin-top:3px;font-size:13px;font-weight:700;color:#1a237e;">{price_str}{reduction}</div>
-    <div style="font-size:11px;color:#888;">{area}</div>
-  </td>
-</tr>"""
+        rows = "".join(_listing_row(e) for e in new_listings)
         n = len(new_listings)
         new_section = f"""
 <h3 style="font-size:15px;color:#1a237e;margin:0 0 8px;">&#128293; {n} new listing{'s' if n != 1 else ''}</h3>
 <table style="border-collapse:collapse;width:100%;">{rows}</table>"""
     else:
         new_section = '<p style="color:#888;font-size:13px;">No new listings since last run.</p>'
+
+    top_performers_section = ""
+    if recent_top_performers:
+        rows = ""
+        for entry in recent_top_performers:
+            days_ago = entry.get("_days_ago", 0)
+            age_label = "today" if days_ago == 0 else f"{days_ago}d ago"
+            rows += _listing_row(entry, extra_meta=f"added {age_label}")
+        top_performers_section = f"""
+<div style="margin-top:16px;padding-top:12px;border-top:1px solid #eee;">
+<h3 style="font-size:14px;color:#2e7d32;margin:0 0 8px;">&#11088; Top performers — last 14 days</h3>
+<table style="border-collapse:collapse;width:100%;">{rows}</table>
+</div>"""
 
     reduction_section = ""
     if recent_reductions:
@@ -128,21 +160,15 @@ def _build_html_email(new_listings: list[dict], recent_reductions: list[dict],
 <table style="border-collapse:collapse;width:100%;">{r_rows}</table>
 </div>"""
 
-    dashboard_note = (
-        '<div style="margin-top:16px;padding-top:12px;border-top:1px solid #eee;">'
-        '<p style="font-size:11px;color:#888;">Full interactive dashboard attached as '
-        '<strong>property-monitor.html</strong> — open in any browser.</p>'
-        '</div>'
-    )
-
     return f"""
 <html><body style="font-family:-apple-system,sans-serif;max-width:640px;margin:auto;color:#333;padding:16px;">
 {test_banner}
 <h2 style="font-size:18px;color:#1a237e;margin:0;">Property Monitor</h2>
-<p style="color:#666;font-size:12px;margin:4px 0 12px;">{now} &#183; {all_count} active &#183; run #{run_count}</p>
+<p style="color:#666;font-size:12px;margin:4px 0 6px;">{now} &#183; {all_count} active &#183; run #{run_count}</p>
+{dashboard_button}
 {new_section}
+{top_performers_section}
 {reduction_section}
-{dashboard_note}
 </body></html>"""
 
 
@@ -231,6 +257,32 @@ def _find_recent_reductions(all_entries: list[dict], last_run: str) -> list[dict
     return reductions
 
 
+def _find_recent_top_performers(all_entries: list[dict], exclude_ids: set[str],
+                                days: int = 14, min_score: int = 60,
+                                max_show: int = 6) -> list[dict]:
+    """Return high-scoring entries first seen within `days` days, excluding already-shown ids."""
+    cutoff = datetime.now() - timedelta(days=days)
+    results = []
+    for entry in all_entries:
+        if entry.get("otm_id", "") in exclude_ids:
+            continue
+        if entry.get("score", 0) < min_score:
+            continue
+        first_seen = entry.get("first_seen", "")
+        if not first_seen:
+            continue
+        try:
+            dt = datetime.fromisoformat(first_seen)
+            if dt < cutoff:
+                continue
+            entry["_days_ago"] = (datetime.now() - dt).days
+        except ValueError:
+            continue
+        results.append(entry)
+    results.sort(key=lambda x: x.get("score", 0), reverse=True)
+    return results[:max_show]
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--top", type=int, default=TOP_N)
@@ -251,12 +303,15 @@ def main():
     if args.test:
         all_entries.sort(key=lambda x: x.get("score", 0), reverse=True)
         test_listings = [e for e in all_entries if e.get("score", 0) >= 50][:args.top]
+        test_ids = {e["otm_id"] for e in test_listings}
 
         reductions = _find_recent_reductions(all_entries, last_run)
+        top_performers = _find_recent_top_performers(all_entries, test_ids)
 
         subject = f"Property Monitor: TEST - top {len(test_listings)} listings"
-        html = _build_html_email(test_listings, reductions, len(seen), run_count, is_test=True)
-        send_email(subject, html, attach_html=LATEST_HTML)
+        html = _build_html_email(test_listings, reductions, top_performers,
+                                 len(seen), run_count, is_test=True)
+        send_email(subject, html)
         return
 
     new_entries = []
@@ -277,13 +332,16 @@ def main():
 
     new_entries.sort(key=lambda x: x.get("score", 0), reverse=True)
     reductions = _find_recent_reductions(all_entries, last_run)
+    new_ids = {e["otm_id"] for e in new_entries}
+    top_performers = _find_recent_top_performers(all_entries, new_ids)
 
     n_new = len(new_entries)
     n_red = len(reductions)
+    n_top = len(top_performers)
 
     # Skip email entirely if nothing to report
-    if not n_new and not n_red:
-        print("No new listings or recent reductions — email skipped.")
+    if not n_new and not n_red and not n_top:
+        print("No new listings, reductions, or top performers — email skipped.")
         return
 
     subject = (f"Property Monitor: {n_new} new listing{'s' if n_new != 1 else ''}"
@@ -291,8 +349,9 @@ def main():
     if n_new and n_red:
         subject = f"Property Monitor: {n_new} new + {n_red} reduction{'s' if n_red != 1 else ''}"
 
-    html = _build_html_email(new_entries[:args.top], reductions, len(seen), run_count)
-    send_email(subject, html, attach_html=LATEST_HTML)
+    html = _build_html_email(new_entries[:args.top], reductions, top_performers,
+                             len(seen), run_count)
+    send_email(subject, html)
 
 
 if __name__ == "__main__":

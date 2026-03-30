@@ -22,6 +22,7 @@ from pathlib import Path
 
 EMAIL_FROM    = os.environ.get("PM_EMAIL_FROM", "")
 EMAIL_TO      = os.environ.get("PM_EMAIL_TO",   "")
+EMAIL_CC      = os.environ.get("PM_EMAIL_CC",   "")
 SMTP_HOST     = os.environ.get("PM_SMTP_HOST",  "smtp.gmail.com")
 SMTP_PORT     = int(os.environ.get("PM_SMTP_PORT", "587"))
 SMTP_USER     = os.environ.get("PM_SMTP_USER",  EMAIL_FROM)
@@ -203,6 +204,8 @@ def send_email(subject: str, html_body: str, attach_html: Path = None) -> None:
     msg["Subject"] = subject
     msg["From"]    = EMAIL_FROM
     msg["To"]      = recipient
+    if EMAIL_CC.strip():
+        msg["Cc"] = EMAIL_CC.strip()
     msg.set_content("Property Monitor alert (HTML email).")
     msg.add_alternative(html_body, subtype="html")
 

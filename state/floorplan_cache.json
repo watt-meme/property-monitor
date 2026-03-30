@@ -1880,5 +1880,105 @@
     "garden_assessment": "medium",
     "verdict": "mixed",
     "summary": "Strong room sizes on the upper floors (especially Bedroom One and Two) but the kitchen-to-reception separation across floors is a fundamental layout drawback. Bedrooms Three and Four are also notably cramped, limiting family practicality."
+  },
+  "https://media.onthemarket.com/properties/17319626/1603719292/floor-plan-0-1024x1024.png": {
+    "bedrooms_by_floor": {
+      "basement": 0,
+      "lower_ground": 0,
+      "ground": 0,
+      "first": 5,
+      "second": 2,
+      "third": 0
+    },
+    "total_above_ground_beds": 7,
+    "basement_rooms": [],
+    "room_concerns": [
+      "Bedroom on second floor (3.22 x 2.08m / ~7ft wide) is very narrow and likely too small to function as a true double bedroom",
+      "Second floor bathroom appears small and serves two bedrooms on that level",
+      "Utility/Boot Room on ground floor is compact at approximately 0.9 x 1.8m",
+      "First floor Bedroom 5 (4.47 x 1.19m) appears extremely narrow \u2014 likely a single or study only, not a usable double",
+      "Hall circulation on first floor appears substantial given the number of rooms served"
+    ],
+    "main_bed_adequate": true,
+    "circulation_pct": 18,
+    "kitchen_location": "ground",
+    "kitchen_mod_difficulty": "moderate",
+    "kitchen_adjacent_reception": false,
+    "through_reception": true,
+    "double_fronted": true,
+    "extension_potential": true,
+    "garden_assessment": "large",
+    "verdict": "good",
+    "summary": "A large double-fronted house with seven bedrooms across two upper floors and generous reception space on the ground floor, though one second-floor bedroom and one first-floor room are too narrow to function as doubles. The substantial rear garden and extension potential add significant upside."
+  },
+  "https://media.onthemarket.com/properties/18392150/1603317363/floor-plan-0-1024x1024.jpg": {
+    "bedrooms_by_floor": {
+      "basement": 0,
+      "lower_ground": 0,
+      "ground": 0,
+      "first": 4,
+      "second": 2,
+      "third": 0
+    },
+    "total_above_ground_beds": 6,
+    "basement_rooms": [
+      "cellar/storage"
+    ],
+    "room_concerns": [
+      "Study at 9'10\" x 7'6\" is very small \u2014 usable only as a home office, not a bedroom",
+      "Utility room appears narrow and tucked behind kitchen with limited natural light",
+      "Bedroom Six at 13'11\" x 13'10\" is well-proportioned but accessed via second floor landing shared with eaves storage, which may feel cramped",
+      "Reception Room is a single large room at 29'1\" x 14'3\" \u2014 generous but not through-reception; rear garden access appears indirect",
+      "Front garden is only 7'7\" deep, limiting kerb appeal and bike/bin storage"
+    ],
+    "main_bed_adequate": true,
+    "circulation_pct": 18,
+    "kitchen_location": "ground",
+    "kitchen_mod_difficulty": "moderate",
+    "kitchen_adjacent_reception": false,
+    "through_reception": false,
+    "double_fronted": true,
+    "extension_potential": true,
+    "garden_assessment": "large",
+    "verdict": "strong",
+    "summary": "A substantial double-fronted six-bedroom Victorian house with excellent bedroom proportions on both upper floors and a large rear garden of over 1700 sq ft. The kitchen and reception room are on the same floor but separated by the hallway, requiring structural work to open up."
+  },
+  "https://media.onthemarket.com/properties/17616630/1603698146/floor-plan-0-1024x1024.png": {
+    "bedrooms_by_floor": {
+      "basement": 0,
+      "lower_ground": 0,
+      "ground": 0,
+      "first": 1,
+      "second": 2,
+      "third": 1
+    },
+    "total_above_ground_beds": 4,
+    "basement_rooms": [
+      "basement storage/open room",
+      "utility/kitchen area"
+    ],
+    "room_concerns": [
+      "Third floor bedroom is only 15'6 x 9'1 (4.72x2.77m) \u2014 narrow and modest for a double",
+      "First floor bedroom is only 12'10 x 8'5 (3.91x2.57m) \u2014 quite tight for a double",
+      "Second floor bedroom 2 is only 11'6 x 9'9 (3.51x2.97m) \u2014 small double at best",
+      "Ground floor kitchen is narrow at 17'0 x 8'5 (5.18x2.57m) \u2014 galley-style, limited worktop/dining space",
+      "Ground floor plan shows only kitchen and garden access \u2014 no reception room on this level, creating an unusual layout",
+      "Reception room and dining room are on the lower ground floor, separated from kitchen above by a full floor \u2014 poor kitchen-to-reception relationship",
+      "Dining room at lower ground is only 10'8 x 9'0 (3.25x2.74m) \u2014 small for formal dining",
+      "Reception room at lower ground is 13'11 x 10'10 (4.24x3.30m) \u2014 adequate but not generous",
+      "No bathroom visible on first floor plan \u2014 only one bedroom shown with no ensuite labelled",
+      "Basement room has no labelled use and limited natural light likely"
+    ],
+    "main_bed_adequate": true,
+    "circulation_pct": 18,
+    "kitchen_location": "ground",
+    "kitchen_mod_difficulty": "hard",
+    "kitchen_adjacent_reception": false,
+    "through_reception": false,
+    "double_fronted": false,
+    "extension_potential": true,
+    "garden_assessment": "medium",
+    "verdict": "mixed",
+    "summary": "This tall, narrow terrace has four bedrooms across three upper floors and good square footage overall, but the kitchen sits a full floor above the reception rooms, creating a fundamentally awkward living arrangement that would be costly to resolve."
   }
 }

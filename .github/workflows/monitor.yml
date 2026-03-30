@@ -54,6 +54,7 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           PM_EMAIL_FROM: ${{ secrets.PM_EMAIL_FROM }}
           PM_EMAIL_TO: ${{ secrets.PM_EMAIL_TO }}
+          PM_EMAIL_CC: ${{ secrets.PM_EMAIL_CC }}
           PM_SMTP_PASS: ${{ secrets.PM_SMTP_PASS }}
         run: python3 email_alert.py
 

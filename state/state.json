@@ -151,7 +151,7 @@
     "otm:18392150": {
       "address": "Allerton Road, Stoke Newington, London, N16",
       "price": 1950000,
-      "score": 64,
+      "score": 61,
       "first_seen": "2026-03-01T12:03:59.580601",
       "price_history": [
         {
@@ -1127,7 +1127,7 @@
     "otm:18585669": {
       "address": "Shacklewell Lane, London E8",
       "price": 1700000,
-      "score": 45,
+      "score": 37,
       "first_seen": "2026-03-01T12:03:59.580863",
       "price_history": [
         {
@@ -1861,6 +1861,6 @@
       ]
     }
   },
-  "last_run": "2026-03-27T10:10:44.160391",
-  "run_count": 22
+  "last_run": "2026-03-30T11:21:50.608212",
+  "run_count": 23
 }

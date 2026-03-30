@@ -39,17 +39,35 @@ def mark_seen(listings: list[dict], state: dict) -> dict:
         key = f"otm:{l.get('id', '')}"
         current_price = l.get("price", 0)
 
+        sqft = l.get("sqft") or 0
+        ppsf = round(current_price / sqft) if sqft else None
+
         if key not in seen:
             seen[key] = {
                 "address": l.get("address", ""),
                 "price": current_price,
                 "score": l.get("score", 0),
+                "beds": l.get("bedrooms", 0),
+                "sqft": sqft or None,
+                "ppsf": ppsf,
+                "period": l.get("period", ""),
+                "area_label": l.get("area_label", ""),
                 "first_seen": now,
                 "price_history": [{"date": now, "price": current_price}],
             }
         else:
             existing = seen[key]
             existing["score"] = l.get("score", 0)
+            # Refresh enrichable fields each run so they stay current
+            if l.get("bedrooms"):
+                existing["beds"] = l.get("bedrooms", 0)
+            if sqft:
+                existing["sqft"] = sqft
+                existing["ppsf"] = ppsf
+            if l.get("period"):
+                existing["period"] = l.get("period", "")
+            if l.get("area_label"):
+                existing["area_label"] = l.get("area_label", "")
 
             # Migrate legacy entries that have no price_history
             if "price_history" not in existing:

@@ -27,15 +27,18 @@ VFM_NO_SQFT = 8  # neutral when unknown
 # --- Bedrooms (0-20) ---
 BEDS_ABOVE_GROUND_SCORE = {4: 20, 3: 12, 5: 15, 6: 12}
 
-# --- Period / style (0-20) ---
+# --- Period / style (0-12) ---
+# Reduced from 0-20: period is still a positive signal but location matters more.
+# Post-war *penalties* (-8 to -25) are unchanged and remain the primary filter
+# against 1940s+ stock — they live in POSTWAR_STYLE_PENALTIES below.
 PERIOD_SCORE = {
-    "georgian": 20, "regency": 20, "grade ii listed": 20, "grade ii": 18,
-    "early victorian": 14, "victorian_stucco": 14,
-    "victorian": 10, "late victorian": 10,
-    "edwardian": 8,
-    "period": 7,
+    "georgian": 12, "regency": 12, "grade ii listed": 12, "grade ii": 11,
+    "early victorian": 9, "victorian_stucco": 9,
+    "victorian": 7, "late victorian": 7,
+    "edwardian": 5,
+    "period": 4,
 }
-PERIOD_DEFAULT = 3
+PERIOD_DEFAULT = 2
 PERIOD_MODERN = 0
 
 STYLE_BONUS = {
@@ -61,8 +64,9 @@ GARDEN_KEYWORDS = {
     "north-facing garden": 2, "north facing garden": 2,
 }
 
-# --- Micro-location quality (0-20) ---
-LOCATION_SCORE = {"premium": 20, "good": 12, "acceptable": 6, "fringe": 2}
+# --- Micro-location quality (0-25) ---
+# Increased from 0-20: location is the primary differentiator.
+LOCATION_SCORE = {"premium": 25, "good": 16, "acceptable": 8, "fringe": 2}
 
 # --- Layout quality signals (additive, -20 to +10) ---
 LAYOUT_POSITIVE = {

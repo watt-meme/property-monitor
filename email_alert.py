@@ -79,20 +79,35 @@ def _listing_row(entry: dict, font_size: int = 20, padding: str = "8px 10px",
     reduction = _reduction_badge(entry)
     otm_id = entry.get("otm_id", "")
     url = f"https://www.onthemarket.com/details/{otm_id}/" if otm_id else "#"
+
+    # Build detail line: beds · period · £/sqft · area · extra
+    detail_parts = []
+    beds = entry.get("beds")
+    if beds:
+        detail_parts.append(f"{beds} bed")
+    period = entry.get("period", "").replace("_", " ").title()
+    if period and period.lower() not in ("unknown", "modern", ""):
+        detail_parts.append(period)
+    ppsf = entry.get("ppsf")
+    if ppsf:
+        detail_parts.append(f"&#163;{ppsf:,}/sqft")
     area = entry.get("area_label", "")
-    meta_parts = []
     if area:
-        meta_parts.append(area)
+        detail_parts.append(area)
     if extra_meta:
-        meta_parts.append(extra_meta)
-    meta_html = f'<div style="font-size:11px;color:#888;">{" · ".join(meta_parts)}</div>' if meta_parts else ""
+        detail_parts.append(extra_meta)
+
+    detail_html = (
+        f'<div style="font-size:11px;color:#888;margin-top:2px;">{" · ".join(detail_parts)}</div>'
+        if detail_parts else ""
+    )
     return f"""
 <tr style="border-bottom:1px solid #f0f0f0;">
   <td style="padding:{padding};text-align:center;font-size:{font_size}px;font-weight:700;color:{col};width:48px;">{score}</td>
   <td style="padding:{padding};">
     <div><a href="{url}" style="color:#1565c0;font-weight:600;text-decoration:none;">{addr}</a></div>
     <div style="margin-top:3px;font-size:13px;font-weight:700;color:#1a237e;">{price_str}{reduction}</div>
-    {meta_html}
+    {detail_html}
   </td>
 </tr>"""
 

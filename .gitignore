@@ -10,3 +10,11 @@ com.jackdown.property-monitor.plist
 /detail_cache.json
 /floorplan_cache.json
 /street_comp_cache.json
+
+# Secrets and OS noise
+.DS_Store
+**/.DS_Store
+.env
+*.env
+.property-monitor-env
+state/

@@ -17,4 +17,3 @@ com.jackdown.property-monitor.plist
 .env
 *.env
 .property-monitor-env
-state/

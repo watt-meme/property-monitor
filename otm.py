@@ -242,10 +242,12 @@ def enrich_detail(listing: dict) -> dict:
             counts = Counter(int(x.replace(",", "")) for x in m)
             listing["sqft"] = counts.most_common(1)[0][0]
 
-    # Write to cache
-    cache[lid] = {k: listing.get(k) for k in _DETAIL_FIELDS}
-    cache[lid]["_cached"] = datetime.now().isoformat()
-    _detail_cache_dirty = True
+    # Only cache if we extracted something useful — don't cache empty results
+    # (e.g. OTM redirect pages) which would block retries for 7 days.
+    if listing.get("sqft") or listing.get("description") or listing.get("floorplan_url"):
+        cache[lid] = {k: listing.get(k) for k in _DETAIL_FIELDS}
+        cache[lid]["_cached"] = datetime.now().isoformat()
+        _detail_cache_dirty = True
 
     return listing
 

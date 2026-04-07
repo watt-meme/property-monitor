@@ -230,7 +230,7 @@ TRAFFIC_ROAD_PENALTIES = {
     "highbury grove": -15,
     "highbury hill": -15,
     "blackstock road": -15,
-    "amhurst road": -15,
+
     "pembury road": -15,
     "victoria park road": -15,
     "canonbury road": -15,

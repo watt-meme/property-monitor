@@ -77,7 +77,7 @@ def mark_seen(listings: list[dict], state: dict) -> dict:
 
             # Record price change if different from last known price
             last_known_price = existing["price"]
-            if current_price and current_price != last_known_price:
+            if current_price != last_known_price:
                 existing["price_history"].append({"date": now, "price": current_price})
                 existing["price"] = current_price
 

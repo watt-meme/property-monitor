@@ -28,11 +28,6 @@ try:
     _SSL_CTX = ssl.create_default_context(cafile=certifi.where())
 except ImportError:
     _SSL_CTX = ssl.create_default_context()
-    try:
-        urllib.request.urlopen("https://landregistry.data.gov.uk/",
-                               context=_SSL_CTX, timeout=5)
-    except Exception:
-        _SSL_CTX = ssl._create_unverified_context()
 
 BASE_DIR = Path(__file__).parent
 CACHE_FILE = BASE_DIR / "street_comp_cache.json"

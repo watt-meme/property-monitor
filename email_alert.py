@@ -282,10 +282,12 @@ def _find_top_scorers(all_entries: list[dict], n: int = 5) -> list[dict]:
 
 
 def _find_recent_additions(all_entries: list[dict], n: int = 5) -> list[dict]:
-    """Return the n most recently first_seen entries, with _days_ago attached."""
+    """Return the n most recently first_seen non-excluded entries, with _days_ago attached."""
     now = datetime.now()
     dated = []
     for entry in all_entries:
+        if entry.get("score", -1) < 0:
+            continue  # skip excluded (leaseholds, new builds, flats etc.)
         first_seen = entry.get("first_seen", "")
         if not first_seen:
             continue

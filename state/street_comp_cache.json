@@ -5,11 +5,9 @@
     "sales_count": 0
   },
   "cloudesley road|n1": {
-    "ppsf": 1715,
-    "date": "2026-03-01T11:51:48.661967",
-    "sales_count": 15,
-    "street": "Cloudesley Road",
-    "outcode": "N1"
+    "ppsf": null,
+    "date": "2026-04-12T18:53:36.625312",
+    "sales_count": 0
   },
   "alkham road|n16": {
     "ppsf": 1027,
@@ -33,11 +31,9 @@
     "outcode": "N1"
   },
   "stamford road|n1": {
-    "ppsf": 1492,
-    "date": "2026-03-01T11:52:53.805543",
-    "sales_count": 14,
-    "street": "Stamford Road",
-    "outcode": "N1"
+    "ppsf": null,
+    "date": "2026-04-12T18:55:38.899422",
+    "sales_count": 0
   },
   "prince george road|n16": {
     "ppsf": 1128,
@@ -83,7 +79,7 @@
   },
   "hertford road|n1": {
     "ppsf": 847,
-    "date": "2026-03-01T11:54:44.793172",
+    "date": "2026-04-12T18:53:16.258707",
     "sales_count": 5,
     "street": "Hertford Road",
     "outcode": "N1"
@@ -103,11 +99,9 @@
     "outcode": "N16"
   },
   "lauriston road|e9": {
-    "ppsf": 1308,
-    "date": "2026-03-01T11:55:30.767546",
-    "sales_count": 15,
-    "street": "Lauriston Road",
-    "outcode": "E9"
+    "ppsf": null,
+    "date": "2026-04-12T18:56:40.123050",
+    "sales_count": 0
   },
   "charlton place|n1": {
     "ppsf": 789,
@@ -124,11 +118,9 @@
     "outcode": "N16"
   },
   "brownlow road|e8": {
-    "ppsf": 931,
-    "date": "2026-03-01T11:56:16.744841",
-    "sales_count": 9,
-    "street": "Brownlow Road",
-    "outcode": "E8"
+    "ppsf": null,
+    "date": "2026-04-12T18:54:37.755469",
+    "sales_count": 0
   },
   "brenthouse road|e9": {
     "ppsf": 1090,
@@ -145,11 +137,9 @@
     "outcode": "N16"
   },
   "bushberry road|e9": {
-    "ppsf": 729,
-    "date": "2026-03-01T11:57:02.825995",
-    "sales_count": 7,
-    "street": "Bushberry Road",
-    "outcode": "E9"
+    "ppsf": null,
+    "date": "2026-04-12T18:58:21.250532",
+    "sales_count": 0
   },
   "brett close|n16": {
     "ppsf": null,
@@ -172,7 +162,7 @@
   },
   "london e9|e9": {
     "ppsf": null,
-    "date": "2026-03-01T11:57:49.621228",
+    "date": "2026-04-12T18:54:58.281014",
     "sales_count": 0
   },
   "ellingfort road|e8": {
@@ -190,11 +180,9 @@
     "outcode": "E9"
   },
   "belgrade road|n16": {
-    "ppsf": 1056,
-    "date": "2026-03-01T11:58:35.702267",
-    "sales_count": 21,
-    "street": "Belgrade Road",
-    "outcode": "N16"
+    "ppsf": null,
+    "date": "2026-04-12T18:56:19.678604",
+    "sales_count": 0
   },
   "brooke road|n16": {
     "ppsf": 1189,
@@ -239,11 +227,9 @@
     "outcode": "E9"
   },
   "englefield road|n1": {
-    "ppsf": 1534,
-    "date": "2026-03-01T12:00:23.123116",
-    "sales_count": 19,
-    "street": "Englefield Road",
-    "outcode": "N1"
+    "ppsf": null,
+    "date": "2026-04-12T18:53:57.045523",
+    "sales_count": 0
   },
   "bethune road|n16": {
     "ppsf": 1113,
@@ -327,11 +313,9 @@
     "outcode": "E9"
   },
   "hemingford road|n1": {
-    "ppsf": 1923,
-    "date": "2026-03-01T12:03:44.099526",
-    "sales_count": 17,
-    "street": "Hemingford Road",
-    "outcode": "N1"
+    "ppsf": null,
+    "date": "2026-04-12T18:57:40.769660",
+    "sales_count": 0
   },
   "northdown street|n1": {
     "ppsf": null,
@@ -511,5 +495,37 @@
     "sales_count": 2,
     "street": "Rydon Street",
     "outcode": "N1"
+  },
+  "coopersale road|e9": {
+    "ppsf": null,
+    "date": "2026-04-12T18:54:17.291887",
+    "sales_count": 0
+  },
+  "compton avenue|n1": {
+    "ppsf": null,
+    "date": "2026-04-12T18:55:18.651062",
+    "sales_count": 0
+  },
+  "bouverie road|n16": {
+    "ppsf": null,
+    "date": "2026-04-12T18:55:59.358468",
+    "sales_count": 0
+  },
+  "reighton road|e5": {
+    "ppsf": null,
+    "date": "2026-04-12T18:57:00.497576",
+    "sales_count": 0
+  },
+  "lavender grove|e8": {
+    "ppsf": 1520,
+    "date": "2026-04-12T18:57:20.312299",
+    "sales_count": 12,
+    "street": "Lavender Grove",
+    "outcode": "E8"
+  },
+  "elton place|n16": {
+    "ppsf": null,
+    "date": "2026-04-12T18:58:01.009256",
+    "sales_count": 0
   }
 }

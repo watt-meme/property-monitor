@@ -1,0 +1,440 @@
+{
+  "cloudesley road|n1": {
+    "epc_sqft": 1658,
+    "epc_sqm": 154.0,
+    "epc_date": "2025-12-31",
+    "date": "2026-04-12T18:52:33.746785"
+  },
+  "barnsbury terrace|n1": {
+    "epc_sqft": 420,
+    "epc_sqm": 39.0,
+    "epc_date": "2026-02-28",
+    "date": "2026-04-12T18:52:34.080513"
+  },
+  "stamford road|n1": {
+    "epc_sqft": 807,
+    "epc_sqm": 75.0,
+    "epc_date": "2025-12-09",
+    "date": "2026-04-12T18:52:34.402456"
+  },
+  "hackney n16|n16": {
+    "epc_sqft": null,
+    "epc_sqm": null,
+    "epc_date": null,
+    "date": "2026-04-12T18:52:34.696490"
+  },
+  "burma road|n16": {
+    "epc_sqft": 624,
+    "epc_sqm": 58.0,
+    "epc_date": "2026-01-19",
+    "date": "2026-04-12T18:52:35.046141"
+  },
+  "john campbell road|n16": {
+    "epc_sqft": 441,
+    "epc_sqm": 41.0,
+    "epc_date": "2026-02-16",
+    "date": "2026-04-12T18:52:35.390284"
+  },
+  "northwold road|n16": {
+    "epc_sqft": 431,
+    "epc_sqm": 40.0,
+    "epc_date": "2026-02-22",
+    "date": "2026-04-12T18:52:35.704398"
+  },
+  "hertford road|n1": {
+    "epc_sqft": 1421,
+    "epc_sqm": 132.0,
+    "epc_date": "2026-02-23",
+    "date": "2026-04-12T18:52:36.073326"
+  },
+  "ardilaun road|n5": {
+    "epc_sqft": 2347,
+    "epc_sqm": 218.0,
+    "epc_date": "2026-01-20",
+    "date": "2026-04-12T18:52:36.369639"
+  },
+  "allerton road|n16": {
+    "epc_sqft": 797,
+    "epc_sqm": 74.0,
+    "epc_date": "2025-08-04",
+    "date": "2026-04-12T18:52:36.708493"
+  },
+  "lauriston road|e9": {
+    "epc_sqft": 753,
+    "epc_sqm": 70.0,
+    "epc_date": "2025-10-21",
+    "date": "2026-04-12T18:52:37.046657"
+  },
+  "ellingfort road|e8": {
+    "epc_sqft": 710,
+    "epc_sqm": 66.0,
+    "epc_date": "2025-11-13",
+    "date": "2026-04-12T18:52:37.378892"
+  },
+  "hemingford road|n1": {
+    "epc_sqft": 1367,
+    "epc_sqm": 127.0,
+    "epc_date": "2026-02-11",
+    "date": "2026-04-12T18:52:37.731136"
+  },
+  "keystone crescent|n1": {
+    "epc_sqft": 883,
+    "epc_sqm": 82.0,
+    "epc_date": "2026-02-11",
+    "date": "2026-04-12T18:52:38.067549"
+  },
+  "brownlow road|e8": {
+    "epc_sqft": 667,
+    "epc_sqm": 62.0,
+    "epc_date": "2026-01-22",
+    "date": "2026-04-12T18:52:38.376950"
+  },
+  "oldhill street|n16": {
+    "epc_sqft": 1109,
+    "epc_sqm": 103.0,
+    "epc_date": "2026-02-16",
+    "date": "2026-04-12T18:52:38.715554"
+  },
+  "windus road|n16": {
+    "epc_sqft": 538,
+    "epc_sqm": 50.0,
+    "epc_date": "2025-12-11",
+    "date": "2026-04-12T18:52:39.047956"
+  },
+  "london e9|e9": {
+    "epc_sqft": null,
+    "epc_sqm": null,
+    "epc_date": null,
+    "date": "2026-04-12T18:52:39.367972"
+  },
+  "leconfield road|n5": {
+    "epc_sqft": 248,
+    "epc_sqm": 23.0,
+    "epc_date": "2026-01-15",
+    "date": "2026-04-12T18:52:39.720205"
+  },
+  "buckingham road|n1": {
+    "epc_sqft": 1819,
+    "epc_sqm": 169.0,
+    "epc_date": "2025-11-21",
+    "date": "2026-04-12T18:52:40.071912"
+  },
+  "de beauvoir road|n1": {
+    "epc_sqft": 872,
+    "epc_sqm": 81.0,
+    "epc_date": "2026-02-24",
+    "date": "2026-04-12T18:52:40.411918"
+  },
+  "belgrade road|n16": {
+    "epc_sqft": 1292,
+    "epc_sqm": 120.0,
+    "epc_date": "2026-02-10",
+    "date": "2026-04-12T18:52:40.719042"
+  },
+  "brenthouse road|e9": {
+    "epc_sqft": 872,
+    "epc_sqm": 81.0,
+    "epc_date": "2026-02-04",
+    "date": "2026-04-12T18:52:41.039777"
+  },
+  "brett close|n16": {
+    "epc_sqft": 829,
+    "epc_sqm": 77.0,
+    "epc_date": "2025-08-18",
+    "date": "2026-04-12T18:52:41.377616"
+  },
+  "battledean road|n5": {
+    "epc_sqft": 1023,
+    "epc_sqm": 95.0,
+    "epc_date": "2025-12-17",
+    "date": "2026-04-12T18:52:41.706346"
+  },
+  "reighton road|e5": {
+    "epc_sqft": 560,
+    "epc_sqm": 52.0,
+    "epc_date": "2026-01-30",
+    "date": "2026-04-12T18:52:42.043511"
+  },
+  "lampard grove|n16": {
+    "epc_sqft": 646,
+    "epc_sqm": 60.0,
+    "epc_date": "2025-10-23",
+    "date": "2026-04-12T18:52:42.375693"
+  },
+  "lavender grove|e8": {
+    "epc_sqft": 700,
+    "epc_sqm": 65.0,
+    "epc_date": "2025-11-11",
+    "date": "2026-04-12T18:52:42.716340"
+  },
+  "bushberry road|e9": {
+    "epc_sqft": 1238,
+    "epc_sqm": 115.0,
+    "epc_date": "2026-02-03",
+    "date": "2026-04-12T18:52:43.056304"
+  },
+  "elton place|n16": {
+    "epc_sqft": 947,
+    "epc_sqm": 88.0,
+    "epc_date": "2025-12-02",
+    "date": "2026-04-12T18:52:43.380141"
+  },
+  "paragon road|e9": {
+    "epc_sqft": 893,
+    "epc_sqm": 83.0,
+    "epc_date": "2026-02-10",
+    "date": "2026-04-12T18:52:43.708486"
+  },
+  "rydon street|n1": {
+    "epc_sqft": 301,
+    "epc_sqm": 28.0,
+    "epc_date": "2025-09-19",
+    "date": "2026-04-12T18:52:44.064743"
+  },
+  "englefield road|n1": {
+    "epc_sqft": 4166,
+    "epc_sqm": 387.0,
+    "epc_date": "2026-02-26",
+    "date": "2026-04-12T18:52:44.401372"
+  },
+  "sylvester path|e8": {
+    "epc_sqft": 753,
+    "epc_sqm": 70.0,
+    "epc_date": "2025-12-02",
+    "date": "2026-04-12T18:52:44.709401"
+  },
+  "farleigh road|n16": {
+    "epc_sqft": 517,
+    "epc_sqm": 48.0,
+    "epc_date": "2026-02-13",
+    "date": "2026-04-12T18:52:45.042804"
+  },
+  "isabella road|e9": {
+    "epc_sqft": 1324,
+    "epc_sqm": 123.0,
+    "epc_date": "2025-05-07",
+    "date": "2026-04-12T18:52:45.379609"
+  },
+  "farleigh road n16|n16": {
+    "epc_sqft": null,
+    "epc_sqm": null,
+    "epc_date": null,
+    "date": "2026-04-12T18:52:45.700624"
+  },
+  "belfast road|n16": {
+    "epc_sqft": 1098,
+    "epc_sqm": 102.0,
+    "epc_date": "2025-08-12",
+    "date": "2026-04-12T18:52:46.059039"
+  },
+  "balfe street|n1": {
+    "epc_sqft": 980,
+    "epc_sqm": 91.0,
+    "epc_date": "2025-12-03",
+    "date": "2026-04-12T18:52:46.404375"
+  },
+  "coopersale road|e9": {
+    "epc_sqft": 1572,
+    "epc_sqm": 146.0,
+    "epc_date": "2026-02-02",
+    "date": "2026-04-12T18:52:46.711243"
+  },
+  "cassland road|e9": {
+    "epc_sqft": 700,
+    "epc_sqm": 65.0,
+    "epc_date": "2026-02-26",
+    "date": "2026-04-12T18:52:47.044470"
+  },
+  "middleton road|e8": {
+    "epc_sqft": 732,
+    "epc_sqm": 68.0,
+    "epc_date": "2026-02-06",
+    "date": "2026-04-12T18:52:47.376511"
+  },
+  "springdale road|n16": {
+    "epc_sqft": 495,
+    "epc_sqm": 46.0,
+    "epc_date": "2026-02-05",
+    "date": "2026-04-12T18:52:47.711733"
+  },
+  "howard road|n16": {
+    "epc_sqft": 603,
+    "epc_sqm": 56.0,
+    "epc_date": "2026-02-07",
+    "date": "2026-04-12T18:52:48.044120"
+  },
+  "brooke road|n16": {
+    "epc_sqft": 570,
+    "epc_sqm": 53.0,
+    "epc_date": "2026-02-10",
+    "date": "2026-04-12T18:52:48.378531"
+  },
+  "bethune road|n16": {
+    "epc_sqft": 603,
+    "epc_sqm": 56.0,
+    "epc_date": "2026-02-07",
+    "date": "2026-04-12T18:52:48.712324"
+  },
+  "warneford street|e9": {
+    "epc_sqft": 1765,
+    "epc_sqm": 164.0,
+    "epc_date": "2026-02-06",
+    "date": "2026-04-12T18:52:49.045168"
+  },
+  "clarendon close|e9": {
+    "epc_sqft": 646,
+    "epc_sqm": 60.0,
+    "epc_date": "2023-12-15",
+    "date": "2026-04-12T18:52:49.378956"
+  },
+  "hawksley road|n16": {
+    "epc_sqft": 1238,
+    "epc_sqm": 115.0,
+    "epc_date": "2025-12-15",
+    "date": "2026-04-12T18:52:49.711229"
+  },
+  "fleetwood street|n16": {
+    "epc_sqft": 1292,
+    "epc_sqm": 120.0,
+    "epc_date": "2024-12-16",
+    "date": "2026-04-12T18:52:50.046726"
+  },
+  "compton avenue|n1": {
+    "epc_sqft": 3735,
+    "epc_sqm": 347.0,
+    "epc_date": "2025-08-08",
+    "date": "2026-04-12T18:52:50.411703"
+  },
+  "pownall road|e8": {
+    "epc_sqft": 538,
+    "epc_sqm": 50.0,
+    "epc_date": "2026-02-23",
+    "date": "2026-04-12T18:52:50.719711"
+  },
+  "northdown street|n1": {
+    "epc_sqft": 506,
+    "epc_sqm": 47.0,
+    "epc_date": "2026-01-26",
+    "date": "2026-04-12T18:52:51.062618"
+  },
+  "danesdale road|e9": {
+    "epc_sqft": 1399,
+    "epc_sqm": 130.0,
+    "epc_date": "2025-10-25",
+    "date": "2026-04-12T18:52:51.373962"
+  },
+  "bouverie road|n16": {
+    "epc_sqft": 1507,
+    "epc_sqm": 140.0,
+    "epc_date": "2026-02-25",
+    "date": "2026-04-12T18:52:51.712911"
+  },
+  "downham road|n1": {
+    "epc_sqft": 710,
+    "epc_sqm": 66.0,
+    "epc_date": "2025-12-18",
+    "date": "2026-04-12T18:52:52.062846"
+  },
+  "sydner road|n16": {
+    "epc_sqft": 517,
+    "epc_sqm": 48.0,
+    "epc_date": "2025-09-03",
+    "date": "2026-04-12T18:52:52.377213"
+  },
+  "shacklewell lane|e8": {
+    "epc_sqft": 441,
+    "epc_sqm": 41.0,
+    "epc_date": "2025-12-19",
+    "date": "2026-04-12T18:52:52.717919"
+  },
+  "ritson road|e8": {
+    "epc_sqft": 506,
+    "epc_sqm": 47.0,
+    "epc_date": "2026-02-26",
+    "date": "2026-04-12T18:52:53.050827"
+  },
+  "queen anne road|e9": {
+    "epc_sqft": 1378,
+    "epc_sqm": 128.0,
+    "epc_date": "2025-12-24",
+    "date": "2026-04-12T18:52:53.387205"
+  },
+  "poole road|e9": {
+    "epc_sqft": 1572,
+    "epc_sqm": 146.0,
+    "epc_date": "2025-11-25",
+    "date": "2026-04-12T18:52:53.710782"
+  },
+  ".|n16": {
+    "epc_sqft": null,
+    "epc_sqm": null,
+    "epc_date": null,
+    "date": "2026-04-12T18:52:54.033280"
+  },
+  "stellman close|e5": {
+    "epc_sqft": 958,
+    "epc_sqm": 89.0,
+    "epc_date": "2026-02-04",
+    "date": "2026-04-12T18:52:54.386977"
+  },
+  "oldfield road v|n16": {
+    "epc_sqft": null,
+    "epc_sqm": null,
+    "epc_date": null,
+    "date": "2026-04-12T18:52:54.702451"
+  },
+  "new north road|n1": {
+    "epc_sqft": 818,
+    "epc_sqm": 76.0,
+    "epc_date": "2026-02-05",
+    "date": "2026-04-12T18:52:55.074076"
+  },
+  "noble mews|n16": {
+    "epc_sqft": 1055,
+    "epc_sqm": 98.0,
+    "epc_date": "2024-05-04",
+    "date": "2026-04-12T18:52:55.373208"
+  },
+  "green lanes|n4": {
+    "epc_sqft": 678,
+    "epc_sqm": 63.0,
+    "epc_date": "2026-02-26",
+    "date": "2026-04-12T18:52:55.715093"
+  },
+  "darenth road|n16": {
+    "epc_sqft": 710,
+    "epc_sqm": 66.0,
+    "epc_date": "2026-01-13",
+    "date": "2026-04-12T18:52:56.042982"
+  },
+  "victoria park road|e9": {
+    "epc_sqft": 420,
+    "epc_sqm": 39.0,
+    "epc_date": "2026-02-25",
+    "date": "2026-04-12T18:52:56.377048"
+  },
+  "lode|n16": {
+    "epc_sqft": null,
+    "epc_sqm": null,
+    "epc_date": null,
+    "date": "2026-04-12T18:52:56.702881"
+  },
+  "stoke newington high street|n16": {
+    "epc_sqft": 495,
+    "epc_sqm": 46.0,
+    "epc_date": "2026-02-26",
+    "date": "2026-04-12T18:52:57.046716"
+  },
+  "st. mark's rise|e8": {
+    "epc_sqft": 1281,
+    "epc_sqm": 119.0,
+    "epc_date": "2026-01-20",
+    "date": "2026-04-12T18:52:57.385007"
+  },
+  "prince george road|n16": {
+    "epc_sqft": 463,
+    "epc_sqm": 43.0,
+    "epc_date": "2025-11-16",
+    "date": "2026-04-12T18:52:57.729694"
+  }
+}

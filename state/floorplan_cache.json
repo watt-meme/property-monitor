@@ -1980,5 +1980,185 @@
     "garden_assessment": "medium",
     "verdict": "mixed",
     "summary": "This tall, narrow terrace has four bedrooms across three upper floors and good square footage overall, but the kitchen sits a full floor above the reception rooms, creating a fundamentally awkward living arrangement that would be costly to resolve."
+  },
+  "https://media.onthemarket.com/properties/18409187/1606277082/floor-plan-0-1024x1024.jpg": {
+    "bedrooms_by_floor": {
+      "basement": 0,
+      "lower_ground": 2,
+      "ground": 0,
+      "first": 0,
+      "second": 1,
+      "third": 1
+    },
+    "total_above_ground_beds": 2,
+    "basement_rooms": [
+      "bedroom",
+      "bedroom",
+      "bathroom",
+      "shower room or WC"
+    ],
+    "room_concerns": [
+      "Lower ground bedroom 1 is only 4.20m x 2.42m (13'9 x 7'11) \u2014 under 8ft wide, cramped for a double",
+      "Kitchen on first floor is very small at 2.96m x 2.71m (9'9 x 8'11) and separated from both reception rooms",
+      "Raised ground floor reception room 2 is narrow at 3.39m x 2.34m (11'1 x 7'8) \u2014 barely usable as a proper reception",
+      "Kitchen is on a different floor from the raised ground floor receptions, creating an inconvenient split-level living arrangement",
+      "No bedroom access to outdoor space \u2014 garden access appears only via lower ground, separating it from main living floors"
+    ],
+    "main_bed_adequate": true,
+    "circulation_pct": 18,
+    "kitchen_location": "first",
+    "kitchen_mod_difficulty": "hard",
+    "kitchen_adjacent_reception": true,
+    "through_reception": false,
+    "double_fronted": false,
+    "extension_potential": true,
+    "garden_assessment": "unclear",
+    "verdict": "mixed",
+    "summary": "Good room sizes on upper floors with two well-proportioned bedrooms (second and third) and decent receptions, but the kitchen is tiny, on a different floor from the main entertaining space, and the lower ground bedrooms are awkwardly positioned with one very narrow."
+  },
+  "https://media.onthemarket.com/properties/19044354/1605945760/floor-plan-0-1024x1024.png": {
+    "bedrooms_by_floor": {
+      "basement": 0,
+      "lower_ground": 0,
+      "ground": 1,
+      "first": 2,
+      "second": 0,
+      "third": 0
+    },
+    "total_above_ground_beds": 3,
+    "basement_rooms": [],
+    "room_concerns": [
+      "Kitchen is very small at 9'8 x 9'4 (2.95m x 2.84m) \u2014 barely functional for a family",
+      "Kitchen is on ground floor separated from upper ground reception rooms, making open-plan living impossible without major replanning",
+      "Second reception room on upper ground floor is only 10'8 x 9'3 \u2014 tight for a dining room or second sitting room",
+      "First floor Bedroom 2 is only 10'9 x 10'1 \u2014 acceptable but not generous",
+      "First floor Bedroom 1 at 14'10 x 10'0 is wide but only 10ft deep, limiting furniture arrangements",
+      "No bathroom shown on first floor in the floorplan \u2014 WC/bathroom provision on upper floors unclear",
+      "Split-level layout across three distinct floors adds significant daily stair use between kitchen and living areas"
+    ],
+    "main_bed_adequate": false,
+    "circulation_pct": 18,
+    "kitchen_location": "ground",
+    "kitchen_mod_difficulty": "hard",
+    "kitchen_adjacent_reception": false,
+    "through_reception": false,
+    "double_fronted": false,
+    "extension_potential": true,
+    "garden_assessment": "large",
+    "verdict": "mixed",
+    "summary": "The large 52ft garden and three-floor layout offer real space, but the tiny separated kitchen on the ground floor is a fundamental flaw \u2014 entirely disconnected from the upper-ground reception rooms, making modern open-plan living impossible without full replanning."
+  },
+  "https://media.onthemarket.com/properties/18647561/1595087912/floor-plan-0-1024x1024.png": {
+    "bedrooms_by_floor": {
+      "basement": 0,
+      "lower_ground": 0,
+      "ground": 0,
+      "first": 3,
+      "second": 0,
+      "third": 0
+    },
+    "total_above_ground_beds": 3,
+    "basement_rooms": [
+      "kitchen",
+      "dining room",
+      "store"
+    ],
+    "room_concerns": [
+      "Bedroom 1 (8'7 x 7'3 / 2.62m x 2.21m) is very undersized \u2014 under 8ft wide and well below 70 sq ft, barely usable as a single bedroom",
+      "Kitchen is on the lower ground floor, a full floor below the ground floor reception rooms, making everyday living and entertaining awkward",
+      "Ground floor has two separate reception rooms (11'10x11'8 and 12'9x12'5) but no kitchen or dining provision, fragmenting living across floors",
+      "No bathroom visible on the first floor plan as shown \u2014 bathroom provision on upper floor is unclear",
+      "Lower ground rear garden (29'11 x 20'0) is accessed separately from the ground floor rear garden, suggesting split-level outdoor space typical of raised-ground Victorian terrace"
+    ],
+    "main_bed_adequate": true,
+    "circulation_pct": 18,
+    "kitchen_location": "lower_ground",
+    "kitchen_mod_difficulty": "hard",
+    "kitchen_adjacent_reception": false,
+    "through_reception": false,
+    "double_fronted": false,
+    "extension_potential": true,
+    "garden_assessment": "medium",
+    "verdict": "mixed",
+    "summary": "Three good-sized reception rooms and a decent main bedroom, but the kitchen is stranded on the lower ground floor away from the main living space, and Bedroom 1 is too small to be a true bedroom. The vertical split across three floors creates real everyday inconvenience."
+  },
+  "https://media.onthemarket.com/properties/17979311/1605025350/floor-plan-0-1024x1024.jpg": {
+    "bedrooms_by_floor": {
+      "basement": 0,
+      "lower_ground": 0,
+      "ground": 0,
+      "first": 2,
+      "second": 1,
+      "third": 0
+    },
+    "total_above_ground_beds": 3,
+    "basement_rooms": [
+      "reception_room",
+      "dining_room",
+      "kitchen",
+      "wine_cellar",
+      "vault",
+      "conservatory"
+    ],
+    "room_concerns": [
+      "Bedroom on first floor (3.80x2.55m / 12'6x8'4) is notably narrow at under 8'4 wide \u2014 tight for a double",
+      "Second bedroom on first floor (4.32x2.66m / 14'2x8'9) also narrow at under 9ft wide",
+      "Kitchen is small at 3.86x3.20m and separated from dining room, limiting open-plan potential",
+      "Raised ground floor reception room (3.30x3.10m / 10'10x10'2) is very small as main living space",
+      "Lower ground floor is the principal living level, meaning main reception and kitchen are below street \u2014 typical for N1 Victorian but worth noting",
+      "Studio on roof/upper level (4.61x3.72m) has reduced headroom per plan notes, limiting usability",
+      "Vault (2.25x2.04m) is very small ancillary space with reduced headroom",
+      "Raised ground floor functions primarily as an entrance/stair throughway with only a small reception room"
+    ],
+    "main_bed_adequate": true,
+    "circulation_pct": 18,
+    "kitchen_location": "lower_ground",
+    "kitchen_mod_difficulty": "moderate",
+    "kitchen_adjacent_reception": true,
+    "through_reception": false,
+    "double_fronted": false,
+    "extension_potential": true,
+    "garden_assessment": "large",
+    "verdict": "mixed",
+    "summary": "Good room sizes on the lower ground with a large garden (37'5x29'2) and adequate main bedroom, but the two first-floor bedrooms are narrow, the raised ground floor reception is very small, and the split-level layout creates a disjointed living arrangement."
+  },
+  "https://media.onthemarket.com/properties/19223687/1606826482/floor-plan-0-1024x1024.gif": {
+    "bedrooms_by_floor": {
+      "basement": 0,
+      "lower_ground": 1,
+      "ground": 0,
+      "first": 2,
+      "second": 0,
+      "third": 0
+    },
+    "total_above_ground_beds": 2,
+    "basement_rooms": [
+      "storage vault",
+      "storage vault",
+      "utility",
+      "kitchen",
+      "bedroom"
+    ],
+    "room_concerns": [
+      "Bedroom on lower ground floor has no natural light from street and limited outlook \u2014 rear-facing only",
+      "Lower ground bedroom at 11'9 x 9'9 is acceptable but ceiling height noted at 2.42m \u2014 may feel low",
+      "Kitchen at 15' x 10'1 is on lower ground floor, separated from ground floor reception rooms \u2014 inconvenient for everyday living",
+      "Ground floor has two reception rooms but no kitchen adjacency \u2014 entertaining requires carrying food up/down stairs",
+      "Reception Room 1 at 11'4 x 9'10 is quite compact for a main reception",
+      "Storage vaults have restricted head height, limiting usability",
+      "Only two true bedrooms total \u2014 modest for a house of this overall footprint",
+      "Principal bedroom ceiling height noted at 2.76m \u2014 fine, but second bedroom at 2.73m and only 11'9 x 9'8"
+    ],
+    "main_bed_adequate": true,
+    "circulation_pct": 18,
+    "kitchen_location": "lower_ground",
+    "kitchen_mod_difficulty": "hard",
+    "kitchen_adjacent_reception": false,
+    "through_reception": false,
+    "double_fronted": false,
+    "extension_potential": true,
+    "garden_assessment": "medium",
+    "verdict": "mixed",
+    "summary": "The house has a well-sized principal bedroom and a generous garden, but the kitchen is stranded on the lower ground floor away from both reception rooms, and the property only delivers two bedrooms across its 1,218 sq ft footprint \u2014 a real layout compromise."
   }
 }

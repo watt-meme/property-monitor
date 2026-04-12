@@ -88,9 +88,15 @@ def _listing_row(entry: dict, font_size: int = 20, padding: str = "8px 10px",
     period = entry.get("period", "").replace("_", " ").title()
     if period and period.lower() not in ("unknown", "modern", ""):
         detail_parts.append(period)
-    sqft = entry.get("sqft")
+    epc_sqft = entry.get("epc_sqft")
+    sqft = epc_sqft or entry.get("sqft")
     if sqft:
-        detail_parts.append(f"{sqft:,} sqft")
+        label = f"{sqft:,} sqft"
+        if epc_sqft and entry.get("sqft") and entry.get("sqft_discrepancy"):
+            label += f" EPC (listed {entry['sqft']:,})"
+        elif epc_sqft:
+            label += " EPC"
+        detail_parts.append(label)
     ppsf = entry.get("ppsf")
     if ppsf:
         detail_parts.append(f"&#163;{ppsf:,}/sqft")

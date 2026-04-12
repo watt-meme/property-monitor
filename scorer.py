@@ -245,7 +245,8 @@ def score_property(listing: dict) -> dict:
         return listing
 
     # ===== VFM (0-25) =====
-    sqft = listing.get("sqft")
+    # Prefer EPC floor area (surveyor-measured) over OTM-reported sqft
+    sqft = listing.get("epc_sqft") or listing.get("sqft")
     price = listing.get("price", 0)
     ppsf = None
 

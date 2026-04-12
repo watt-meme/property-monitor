@@ -32,6 +32,7 @@ jobs:
           cp state/detail_cache.json . 2>/dev/null || echo '{}' > detail_cache.json
           cp state/street_comp_cache.json . 2>/dev/null || echo '{}' > street_comp_cache.json
           cp state/floorplan_cache.json . 2>/dev/null || echo '{}' > floorplan_cache.json
+          cp state/epc_cache.json . 2>/dev/null || echo '{}' > epc_cache.json
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -48,6 +49,8 @@ jobs:
           PM_EMAIL_TO: ${{ secrets.PM_EMAIL_TO }}
           PM_SMTP_PASS: ${{ secrets.PM_SMTP_PASS }}
           PM_DASHBOARD_PASS: ${{ secrets.PM_DASHBOARD_PASS }}
+          EPC_API_EMAIL: ${{ secrets.EPC_API_EMAIL }}
+          EPC_API_KEY: ${{ secrets.EPC_API_KEY }}
         run: python3 monitor.py --all --quiet --floorplan
 
       - name: Publish dashboard to GitHub Pages
@@ -62,6 +65,7 @@ jobs:
           cp detail_cache.json state/detail_cache.json
           cp street_comp_cache.json state/street_comp_cache.json
           cp floorplan_cache.json state/floorplan_cache.json
+          cp epc_cache.json state/epc_cache.json 2>/dev/null || true
           git config user.name "property-monitor-bot"
           git config user.email "bot@users.noreply.github.com"
           git add state/ docs/

@@ -99,6 +99,23 @@ def main():
             score_property(listing)
         scored.sort(key=lambda x: x["score"], reverse=True)
 
+    # Phase 3b: EPC floor area lookup — more accurate than OTM-reported sqft
+    if os.environ.get("EPC_API_KEY"):
+        try:
+            from epc import enrich_epc, save_epc_cache
+            if not args.quiet:
+                print(f"\nPhase 3b: EPC lookup for {len(scored)} listings...")
+            for listing in scored:
+                enrich_epc(listing)
+            if not args.dry_run:
+                save_epc_cache()
+            # Re-score: EPC sqft may change VFM
+            for listing in scored:
+                score_property(listing)
+            scored.sort(key=lambda x: x["score"], reverse=True)
+        except ImportError:
+            pass
+
     # Phase 4: Attach price history metadata to each listing
     for listing in scored:
         listing["price_history_meta"] = get_price_history(listing, state)

@@ -17,7 +17,7 @@ import json
 import smtplib
 import argparse
 from email.message import EmailMessage
-from datetime import datetime, timedelta
+from datetime import datetime
 from pathlib import Path
 
 EMAIL_FROM    = os.environ.get("PM_EMAIL_FROM", "")
@@ -88,6 +88,15 @@ def _listing_row(entry: dict, font_size: int = 20, padding: str = "8px 10px",
     period = entry.get("period", "").replace("_", " ").title()
     if period and period.lower() not in ("unknown", "modern", ""):
         detail_parts.append(period)
+    epc_sqft = entry.get("epc_sqft")
+    sqft = epc_sqft or entry.get("sqft")
+    if sqft:
+        label = f"{sqft:,} sqft"
+        if epc_sqft and entry.get("sqft") and entry.get("sqft_discrepancy"):
+            label += f" EPC (listed {entry['sqft']:,})"
+        elif epc_sqft:
+            label += " EPC"
+        detail_parts.append(label)
     ppsf = entry.get("ppsf")
     if ppsf:
         detail_parts.append(f"&#163;{ppsf:,}/sqft")
@@ -112,8 +121,8 @@ def _listing_row(entry: dict, font_size: int = 20, padding: str = "8px 10px",
 </tr>"""
 
 
-def _build_html_email(new_listings: list[dict], recent_reductions: list[dict],
-                       recent_top_performers: list[dict],
+def _build_html_email(top_scorers: list[dict], recent_additions: list[dict],
+                       recent_reductions: list[dict],
                        all_count: int, run_count: int, is_test: bool = False) -> str:
     now = datetime.now().strftime("%A %d %B %Y, %H:%M")
     test_banner = ('<div style="background:#fff3e0;color:#e65100;padding:8px 12px;'
@@ -128,26 +137,23 @@ def _build_html_email(new_listings: list[dict], recent_reductions: list[dict],
         f'</div>'
     )
 
-    new_section = ""
-    if new_listings:
-        rows = "".join(_listing_row(e) for e in new_listings)
-        n = len(new_listings)
-        new_section = f"""
-<h3 style="font-size:15px;color:#1a237e;margin:0 0 8px;">&#128293; {n} new listing{'s' if n != 1 else ''}</h3>
+    top_scorers_section = ""
+    if top_scorers:
+        rows = "".join(_listing_row(e) for e in top_scorers)
+        top_scorers_section = f"""
+<h3 style="font-size:15px;color:#2e7d32;margin:0 0 8px;">&#11088; Top {len(top_scorers)} scorers</h3>
 <table style="border-collapse:collapse;width:100%;">{rows}</table>"""
-    else:
-        new_section = '<p style="color:#888;font-size:13px;">No new listings since last run.</p>'
 
-    top_performers_section = ""
-    if recent_top_performers:
+    recent_additions_section = ""
+    if recent_additions:
         rows = ""
-        for entry in recent_top_performers:
+        for entry in recent_additions:
             days_ago = entry.get("_days_ago", 0)
             age_label = "today" if days_ago == 0 else f"{days_ago}d ago"
             rows += _listing_row(entry, extra_meta=f"added {age_label}")
-        top_performers_section = f"""
+        recent_additions_section = f"""
 <div style="margin-top:16px;padding-top:12px;border-top:1px solid #eee;">
-<h3 style="font-size:14px;color:#2e7d32;margin:0 0 8px;">&#11088; Top performers — last 14 days</h3>
+<h3 style="font-size:14px;color:#1565c0;margin:0 0 8px;">&#128195; {len(recent_additions)} most recent additions</h3>
 <table style="border-collapse:collapse;width:100%;">{rows}</table>
 </div>"""
 
@@ -182,8 +188,8 @@ def _build_html_email(new_listings: list[dict], recent_reductions: list[dict],
 <h2 style="font-size:18px;color:#1a237e;margin:0;">Property Monitor</h2>
 <p style="color:#666;font-size:12px;margin:4px 0 6px;">{now} &#183; {all_count} active &#183; run #{run_count}</p>
 {dashboard_button}
-{new_section}
-{top_performers_section}
+{top_scorers_section}
+{recent_additions_section}
 {reduction_section}
 </body></html>"""
 
@@ -275,30 +281,30 @@ def _find_recent_reductions(all_entries: list[dict], last_run: str) -> list[dict
     return reductions
 
 
-def _find_recent_top_performers(all_entries: list[dict], exclude_ids: set[str],
-                                days: int = 14, min_score: int = 60,
-                                max_show: int = 6) -> list[dict]:
-    """Return high-scoring entries first seen within `days` days, excluding already-shown ids."""
-    cutoff = datetime.now() - timedelta(days=days)
-    results = []
+def _find_top_scorers(all_entries: list[dict], n: int = 5) -> list[dict]:
+    """Return the top n entries by score across all active properties."""
+    sorted_entries = sorted(all_entries, key=lambda x: x.get("score", 0), reverse=True)
+    return sorted_entries[:n]
+
+
+def _find_recent_additions(all_entries: list[dict], n: int = 5) -> list[dict]:
+    """Return the n most recently first_seen non-excluded entries, with _days_ago attached."""
+    now = datetime.now()
+    dated = []
     for entry in all_entries:
-        if entry.get("otm_id", "") in exclude_ids:
-            continue
-        if entry.get("score", 0) < min_score:
-            continue
+        if entry.get("score", -1) < 0:
+            continue  # skip excluded (leaseholds, new builds, flats etc.)
         first_seen = entry.get("first_seen", "")
         if not first_seen:
             continue
         try:
             dt = datetime.fromisoformat(first_seen)
-            if dt < cutoff:
-                continue
-            entry["_days_ago"] = (datetime.now() - dt).days
+            entry["_days_ago"] = (now - dt).days
+            dated.append((dt, entry))
         except ValueError:
             continue
-        results.append(entry)
-    results.sort(key=lambda x: x.get("score", 0), reverse=True)
-    return results[:max_show]
+    dated.sort(key=lambda x: x[0], reverse=True)
+    return [e for _, e in dated[:n]]
 
 
 def main():
@@ -319,19 +325,17 @@ def main():
         all_entries.append(entry_copy)
 
     if args.test:
-        all_entries.sort(key=lambda x: x.get("score", 0), reverse=True)
-        test_listings = [e for e in all_entries if e.get("score", 0) >= 50][:args.top]
-        test_ids = {e["otm_id"] for e in test_listings}
-
+        top_scorers = _find_top_scorers(all_entries, args.top)
+        recent_additions = _find_recent_additions(all_entries, args.top)
         reductions = _find_recent_reductions(all_entries, last_run)
-        top_performers = _find_recent_top_performers(all_entries, test_ids)
 
-        subject = f"Property Monitor: TEST - top {len(test_listings)} listings"
-        html = _build_html_email(test_listings, reductions, top_performers,
+        subject = f"Property Monitor: TEST - top {args.top} scorers"
+        html = _build_html_email(top_scorers, recent_additions, reductions,
                                  len(seen), run_count, is_test=True)
         send_email(subject, html)
         return
 
+    # Determine whether there is anything new to trigger an email
     new_entries = []
     for entry in all_entries:
         first_seen = entry.get("first_seen", "")
@@ -348,18 +352,13 @@ def main():
             except ValueError:
                 pass
 
-    new_entries.sort(key=lambda x: x.get("score", 0), reverse=True)
     reductions = _find_recent_reductions(all_entries, last_run)
-    new_ids = {e["otm_id"] for e in new_entries}
-    top_performers = _find_recent_top_performers(all_entries, new_ids)
-
     n_new = len(new_entries)
     n_red = len(reductions)
-    n_top = len(top_performers)
 
-    # Skip email entirely if nothing to report
-    if not n_new and not n_red and not n_top:
-        print("No new listings, reductions, or top performers — email skipped.")
+    # Skip email entirely if nothing new to report
+    if not n_new and not n_red:
+        print("No new listings or price reductions — email skipped.")
         return
 
     subject = (f"Property Monitor: {n_new} new listing{'s' if n_new != 1 else ''}"
@@ -367,8 +366,9 @@ def main():
     if n_new and n_red:
         subject = f"Property Monitor: {n_new} new + {n_red} reduction{'s' if n_red != 1 else ''}"
 
-    html = _build_html_email(new_entries[:args.top], reductions, top_performers,
-                             len(seen), run_count)
+    top_scorers = _find_top_scorers(all_entries, args.top)
+    recent_additions = _find_recent_additions(all_entries, args.top)
+    html = _build_html_email(top_scorers, recent_additions, reductions, len(seen), run_count)
     send_email(subject, html)
 
 

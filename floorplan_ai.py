@@ -187,7 +187,7 @@ def _call_claude_api(image_data: bytes, media_type: str) -> Optional[dict]:
     except (KeyError, IndexError, json.JSONDecodeError) as e:
         raw = response_data.get("content", [{}])[0].get("text", "")
         print(f"    Could not parse Claude response: {e}. Raw: {raw[:200]}")
-        return {"summary": "Floorplan parsed but JSON malformed", "raw": raw}
+        return None  # Don't cache — allow retry on next run
 
 
 def analyse_floorplans(listings: list[dict], quiet: bool = False) -> None:

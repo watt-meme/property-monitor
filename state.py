@@ -40,7 +40,9 @@ def mark_seen(listings: list[dict], state: dict) -> dict:
         current_price = l.get("price", 0)
 
         sqft = l.get("sqft") or 0
-        ppsf = round(current_price / sqft) if sqft else None
+        epc_sqft = l.get("epc_sqft")
+        effective_sqft = epc_sqft or sqft or 0
+        ppsf = round(current_price / effective_sqft) if effective_sqft else None
 
         if key not in seen:
             seen[key] = {
@@ -49,6 +51,7 @@ def mark_seen(listings: list[dict], state: dict) -> dict:
                 "score": l.get("score", 0),
                 "beds": l.get("bedrooms", 0),
                 "sqft": sqft or None,
+                "epc_sqft": epc_sqft,
                 "ppsf": ppsf,
                 "period": l.get("period", ""),
                 "area_label": l.get("area_label", ""),
@@ -64,6 +67,9 @@ def mark_seen(listings: list[dict], state: dict) -> dict:
             if sqft:
                 existing["sqft"] = sqft
                 existing["ppsf"] = ppsf
+            if epc_sqft:
+                existing["epc_sqft"] = epc_sqft
+                existing["ppsf"] = ppsf
             if l.get("period"):
                 existing["period"] = l.get("period", "")
             if l.get("area_label"):
@@ -77,7 +83,7 @@ def mark_seen(listings: list[dict], state: dict) -> dict:
 
             # Record price change if different from last known price
             last_known_price = existing["price"]
-            if current_price and current_price != last_known_price:
+            if current_price != last_known_price:
                 existing["price_history"].append({"date": now, "price": current_price})
                 existing["price"] = current_price
 

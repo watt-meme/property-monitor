@@ -6,10 +6,11 @@ __pycache__/
 com.jackdown.property-monitor.plist
 
 # Root-level cache files (stale duplicates; CI uses state/*.json)
-state.json
-detail_cache.json
-floorplan_cache.json
-street_comp_cache.json
+/state.json
+/detail_cache.json
+/floorplan_cache.json
+/street_comp_cache.json
+/epc_cache.json
 
 # Secrets and OS noise
 .DS_Store
@@ -17,4 +18,3 @@ street_comp_cache.json
 .env
 *.env
 .property-monitor-env
-state/

@@ -230,7 +230,7 @@ TRAFFIC_ROAD_PENALTIES = {
     "highbury grove": -15,
     "highbury hill": -15,
     "blackstock road": -15,
-    "amhurst road": -15,
+
     "pembury road": -15,
     "victoria park road": -15,
     "canonbury road": -15,
@@ -281,4 +281,6 @@ ALERTS_DIR = os.path.join(BASE_DIR, "alerts")
 STATE_FILE = os.path.join(BASE_DIR, "state.json")
 DETAIL_CACHE_FILE = os.path.join(BASE_DIR, "detail_cache.json")
 DETAIL_CACHE_MAX_AGE_DAYS = 7
+EPC_CACHE_FILE = os.path.join(BASE_DIR, "epc_cache.json")
+EPC_CACHE_MAX_AGE_DAYS = 90
 REQUEST_DELAY = 1.5

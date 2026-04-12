@@ -91,18 +91,44 @@ def main():
                 print(f"  [{i+1}/{len(scored)}] {addr}...")
             enrich_detail(listing)
 
-        save_detail_cache()
+        if not args.dry_run:
+            save_detail_cache()
 
         # Re-score with enriched data
         for listing in scored:
             score_property(listing)
         scored.sort(key=lambda x: x["score"], reverse=True)
 
+    # Phase 3b: EPC floor area lookup — more accurate than OTM-reported sqft
+    if os.environ.get("EPC_API_KEY"):
+        try:
+            from epc import enrich_epc, save_epc_cache
+            if not args.quiet:
+                print(f"\nPhase 3b: EPC lookup for {len(scored)} listings...")
+            for listing in scored:
+                enrich_epc(listing)
+            if not args.dry_run:
+                save_epc_cache()
+            # Re-score: EPC sqft may change VFM
+            for listing in scored:
+                score_property(listing)
+            scored.sort(key=lambda x: x["score"], reverse=True)
+        except ImportError:
+            pass
+
     # Phase 4: Attach price history metadata to each listing
     for listing in scored:
         listing["price_history_meta"] = get_price_history(listing, state)
     for listing in excluded:
         listing["price_history_meta"] = get_price_history(listing, state)
+
+    # Save state NOW — before slow network phases that may timeout.
+    # Street comps and floorplan AI can take 10-20 min; if the CI job times
+    # out during them, state would otherwise be lost entirely.
+    if not args.dry_run:
+        mark_seen(scored, state)
+        mark_seen(excluded, state)
+        save_state(state)
 
     # Phase 4b: Street comp enrichment (Land Registry) — only for score >= 50
     if not args.no_street_comp:
@@ -188,16 +214,11 @@ def main():
     if not args.quiet:
         print(f"\nOutput: {latest_path}")
 
-    # Prune stale detail cache entries
-    pruned = prune_detail_cache()
-    if pruned and not args.quiet:
-        print(f"  Pruned {pruned} stale entries from detail cache")
-
-    # Update state (mark seen + record price history)
+    # Prune stale detail cache entries (skip in dry-run — no disk writes)
     if not args.dry_run:
-        mark_seen(scored, state)
-        mark_seen(excluded, state)
-        save_state(state)
+        pruned = prune_detail_cache()
+        if pruned and not args.quiet:
+            print(f"  Pruned {pruned} stale entries from detail cache")
 
     # Open in browser (local only, not in CI)
     if output_scored and not args.quiet and sys.stdout.isatty() and os.environ.get("CI") != "true":

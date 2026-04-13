@@ -822,18 +822,22 @@
     },
     "otm:15810202": {
       "address": "Northwold Road, Stoke Newington",
-      "price": 1190000,
+      "price": 1120000,
       "score": 42,
       "first_seen": "2026-03-01T12:03:59.580601",
       "price_history": [
         {
           "date": "2026-03-01T12:03:59.580601",
           "price": 1190000
+        },
+        {
+          "date": "2026-04-13T11:55:47.506043",
+          "price": 1120000
         }
       ],
       "beds": 4,
       "sqft": 1073,
-      "ppsf": 1109,
+      "ppsf": 1044,
       "period": "victorian",
       "area_label": "Manor House / Woodberry"
     },
@@ -2653,8 +2657,80 @@
           "price": 1300000
         }
       ]
+    },
+    "otm:19235731": {
+      "address": "Bayston Road, London N16",
+      "price": 1200000,
+      "score": 64,
+      "beds": 3,
+      "sqft": null,
+      "epc_sqft": 1658,
+      "ppsf": 724,
+      "period": "victorian",
+      "area_label": "Stoke Newington north",
+      "first_seen": "2026-04-13T11:55:47.506043",
+      "price_history": [
+        {
+          "date": "2026-04-13T11:55:47.506043",
+          "price": 1200000
+        }
+      ]
+    },
+    "otm:19233415": {
+      "address": "Cecilia Road, London E8",
+      "price": 1500000,
+      "score": 45,
+      "beds": 4,
+      "sqft": null,
+      "epc_sqft": 797,
+      "ppsf": 1882,
+      "period": "victorian",
+      "area_label": "Newington Green east",
+      "first_seen": "2026-04-13T11:55:47.506043",
+      "price_history": [
+        {
+          "date": "2026-04-13T11:55:47.506043",
+          "price": 1500000
+        }
+      ]
+    },
+    "otm:19232652": {
+      "address": "Thornhill Road, London, N1",
+      "price": 2000000,
+      "score": 44,
+      "beds": 3,
+      "sqft": 1126,
+      "epc_sqft": 861,
+      "ppsf": 2323,
+      "period": "modern",
+      "area_label": "Barnsbury",
+      "first_seen": "2026-04-13T11:55:47.506043",
+      "price_history": [
+        {
+          "date": "2026-04-13T11:55:47.506043",
+          "price": 2000000
+        }
+      ]
+    },
+    "otm:17011752": {
+      "address": "Hamilton Park, London N5",
+      "price": 1250000,
+      "score": 22,
+      "beds": 3,
+      "sqft": 1529,
+      "epc_sqft": 506,
+      "ppsf": 2470,
+      "period": "unknown",
+      "area_label": "Highbury Fields",
+      "first_seen": "2026-04-13T11:55:47.506043",
+      "price_history": [
+        {
+          "date": "2026-04-13T11:55:47.506043",
+          "price": 1250000
+        }
+      ]
     }
   },
-  "last_run": "2026-04-12T18:52:57.760344",
-  "run_count": 25
+  "last_run": "2026-04-13T11:55:47.506166",
+  "run_count": 26
 }

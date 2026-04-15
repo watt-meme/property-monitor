@@ -460,5 +460,23 @@
     "epc_sqm": 80.0,
     "epc_date": "2026-02-24",
     "date": "2026-04-13T11:55:47.477802"
+  },
+  "lansdowne drive|e8": {
+    "epc_sqft": 1421,
+    "epc_sqm": 132.0,
+    "epc_date": "2026-02-26",
+    "date": "2026-04-15T10:49:57.435200"
+  },
+  "albion drive|e8": {
+    "epc_sqft": 1550,
+    "epc_sqm": 144.0,
+    "epc_date": "2026-01-22",
+    "date": "2026-04-15T10:49:57.751895"
+  },
+  "painsthorpe road|n16": {
+    "epc_sqft": 1066,
+    "epc_sqm": 99.0,
+    "epc_date": "2025-06-11",
+    "date": "2026-04-15T10:49:58.096549"
   }
 }

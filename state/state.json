@@ -1360,18 +1360,22 @@
     },
     "otm:16030810": {
       "address": "Howard Road, Stoke Newington, London, N16",
-      "price": 850000,
+      "price": 800000,
       "score": 26,
       "first_seen": "2026-03-01T12:03:59.580863",
       "price_history": [
         {
           "date": "2026-03-01T12:03:59.580863",
           "price": 850000
+        },
+        {
+          "date": "2026-04-17T10:43:16.583890",
+          "price": 800000
         }
       ],
       "beds": 4,
       "sqft": 1124,
-      "ppsf": 1410,
+      "ppsf": 1327,
       "epc_sqft": 603,
       "period": "unknown",
       "area_label": "Stoke Newington Church St"
@@ -1901,18 +1905,22 @@
     },
     "otm:18995737": {
       "address": "Elton Place, London, N16",
-      "price": 850000,
-      "score": 52,
+      "price": 800000,
+      "score": 56,
       "first_seen": "2026-03-14T16:21:12.868517",
       "price_history": [
         {
           "date": "2026-03-14T16:21:12.868517",
           "price": 850000
+        },
+        {
+          "date": "2026-04-17T10:43:16.583890",
+          "price": 800000
         }
       ],
       "beds": 3,
       "sqft": 934,
-      "ppsf": 898,
+      "ppsf": 845,
       "epc_sqft": 947,
       "period": "unknown",
       "area_label": "Newington Green"
@@ -1960,18 +1968,22 @@
     },
     "otm:18638198": {
       "address": "Hemingford Road, London N1",
-      "price": 1700000,
-      "score": 52,
+      "price": 1600000,
+      "score": 54,
       "first_seen": "2026-03-17T21:23:46.645456",
       "price_history": [
         {
           "date": "2026-03-17T21:23:46.645456",
           "price": 1700000
+        },
+        {
+          "date": "2026-04-17T10:43:16.583890",
+          "price": 1600000
         }
       ],
       "beds": 3,
       "epc_sqft": 1367,
-      "ppsf": 1244,
+      "ppsf": 1170,
       "period": "unknown",
       "area_label": "Thornhill Sq / Cloudesley"
     },
@@ -2807,8 +2819,98 @@
           "price": 1350000
         }
       ]
+    },
+    "otm:19266426": {
+      "address": "Englefield Road, London, N1",
+      "price": 1625000,
+      "score": 93,
+      "beds": 3,
+      "sqft": 1497,
+      "epc_sqft": 4166,
+      "ppsf": 390,
+      "period": "period",
+      "area_label": "De Beauvoir Town",
+      "first_seen": "2026-04-17T10:43:16.583890",
+      "price_history": [
+        {
+          "date": "2026-04-17T10:43:16.583890",
+          "price": 1625000
+        }
+      ]
+    },
+    "otm:19272488": {
+      "address": "Canonbury Road, Canonbury, Islington, London",
+      "price": 1850000,
+      "score": 56,
+      "beds": 3,
+      "sqft": 1765,
+      "epc_sqft": null,
+      "ppsf": 1048,
+      "period": "georgian",
+      "area_label": "Barnsbury",
+      "first_seen": "2026-04-17T10:43:16.583890",
+      "price_history": [
+        {
+          "date": "2026-04-17T10:43:16.583890",
+          "price": 1850000
+        }
+      ]
+    },
+    "otm:19274237": {
+      "address": "Carysfort Road, London, N16",
+      "price": 1600000,
+      "score": 47,
+      "beds": 5,
+      "sqft": 1854,
+      "epc_sqft": 194,
+      "ppsf": 8247,
+      "period": "victorian",
+      "area_label": "Stoke Newington area",
+      "first_seen": "2026-04-17T10:43:16.583890",
+      "price_history": [
+        {
+          "date": "2026-04-17T10:43:16.583890",
+          "price": 1600000
+        }
+      ]
+    },
+    "otm:19263902": {
+      "address": "Lavender Grove, London, E8",
+      "price": 1600000,
+      "score": 40,
+      "beds": 3,
+      "sqft": null,
+      "epc_sqft": 700,
+      "ppsf": 2286,
+      "period": "victorian",
+      "area_label": "London Fields",
+      "first_seen": "2026-04-17T10:43:16.583890",
+      "price_history": [
+        {
+          "date": "2026-04-17T10:43:16.583890",
+          "price": 1600000
+        }
+      ]
+    },
+    "otm:19270140": {
+      "address": "Christchurch Square, Hackney, E9",
+      "price": 1000000,
+      "score": -1,
+      "beds": 4,
+      "sqft": null,
+      "epc_sqft": null,
+      "ppsf": null,
+      "period": "",
+      "area_label": "Broadway Market",
+      "first_seen": "2026-04-17T10:43:16.584020",
+      "price_history": [
+        {
+          "date": "2026-04-17T10:43:16.584020",
+          "price": 1000000
+        }
+      ]
     }
   },
-  "last_run": "2026-04-15T10:49:58.127196",
-  "run_count": 27
+  "last_run": "2026-04-17T10:43:16.584029",
+  "run_count": 28
 }

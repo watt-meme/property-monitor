@@ -2193,5 +2193,36 @@
     "garden_assessment": "unclear",
     "verdict": "mixed",
     "summary": "Four bedrooms across two floors with a generous main bedroom (17'7 x 12'6) are strong positives, but the kitchen and reception sit on opposite ends of the ground floor separated by a bedroom, making open-plan living difficult without significant replanning."
+  },
+  "https://media.onthemarket.com/properties/19266426/1608038699/floor-plan-0-1024x1024.jpg": {
+    "bedrooms_by_floor": {
+      "basement": 0,
+      "lower_ground": 0,
+      "ground": 0,
+      "first": 3,
+      "second": 0,
+      "third": 0
+    },
+    "total_above_ground_beds": 3,
+    "basement_rooms": [],
+    "room_concerns": [
+      "Bedroom Three is only 2.93 x 2.70m (9'7\" x 8'10\") \u2014 very small, barely fits a double bed",
+      "Reception/Dining Room is a narrow 9.14 x 4.00m (30' x 13'1\") single room serving both functions with no separate reception",
+      "Kitchen is narrow at 5.61 x 2.67m (18'5\" x 8'9\") \u2014 rear galley-style, separated from reception by full depth of house",
+      "No bathroom visible on first floor plan \u2014 bathroom appears to be located between Bedroom Two and Bedroom Three only, confirm provision for Bedroom One",
+      "Ground floor has no WC or cloakroom shown",
+      "Attic (second floor) at 5.36 x 3.88m is counted as storage/attic only, not a bedroom, reducing effective bedroom count"
+    ],
+    "main_bed_adequate": true,
+    "circulation_pct": 15,
+    "kitchen_location": "ground",
+    "kitchen_mod_difficulty": "hard",
+    "kitchen_adjacent_reception": false,
+    "through_reception": false,
+    "double_fronted": false,
+    "extension_potential": true,
+    "garden_assessment": "large",
+    "verdict": "mixed",
+    "summary": "Strong main bedroom and generous plot with large rear garden are real positives, but the kitchen is entirely separate from the reception room requiring full replanning to open up. Bedroom Three is very small and the attic offers unconverted potential."
   }
 }

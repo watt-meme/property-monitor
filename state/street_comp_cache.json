@@ -461,9 +461,11 @@
     "outcode": "N16"
   },
   "buckingham road|n1": {
-    "ppsf": null,
-    "date": "2026-03-19T17:03:12.004536",
-    "sales_count": 0
+    "ppsf": 1739,
+    "date": "2026-04-20T11:57:18.536677",
+    "sales_count": 7,
+    "street": "Buckingham Road",
+    "outcode": "N1"
   },
   "ardilaun road|n5": {
     "ppsf": null,
@@ -534,5 +536,10 @@
     "sales_count": 12,
     "street": "Bayston Road",
     "outcode": "N16"
+  },
+  "castlewood road|n16": {
+    "ppsf": null,
+    "date": "2026-04-20T11:57:39.098712",
+    "sales_count": 0
   }
 }

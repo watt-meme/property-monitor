@@ -2444,12 +2444,12 @@
     },
     "otm:19174383": {
       "address": "Reighton Road, LONDON E5",
-      "price": 1450000,
+      "price": 1400000,
       "score": 54,
       "beds": 4,
       "sqft": 1592,
       "epc_sqft": 560,
-      "ppsf": 2589,
+      "ppsf": 2500,
       "period": "victorian",
       "area_label": "Manor House / Woodberry",
       "first_seen": "2026-04-12T18:52:57.760207",
@@ -2457,6 +2457,10 @@
         {
           "date": "2026-04-12T18:52:57.760207",
           "price": 1450000
+        },
+        {
+          "date": "2026-04-20T11:56:58.345764",
+          "price": 1400000
         }
       ]
     },
@@ -2909,8 +2913,44 @@
           "price": 1000000
         }
       ]
+    },
+    "otm:19282891": {
+      "address": "Castlewood Road, London, N16",
+      "price": 1750000,
+      "score": 55,
+      "beds": 4,
+      "sqft": 1957,
+      "epc_sqft": 721,
+      "ppsf": 2427,
+      "period": "victorian",
+      "area_label": "Stoke Newington area",
+      "first_seen": "2026-04-20T11:56:58.345764",
+      "price_history": [
+        {
+          "date": "2026-04-20T11:56:58.345764",
+          "price": 1750000
+        }
+      ]
+    },
+    "otm:2739": {
+      "address": "",
+      "price": 0,
+      "score": 10,
+      "beds": 0,
+      "sqft": null,
+      "epc_sqft": null,
+      "ppsf": null,
+      "period": "unknown",
+      "area_label": "",
+      "first_seen": "2026-04-20T11:56:58.345764",
+      "price_history": [
+        {
+          "date": "2026-04-20T11:56:58.345764",
+          "price": 0
+        }
+      ]
     }
   },
-  "last_run": "2026-04-17T10:43:16.584029",
-  "run_count": 28
+  "last_run": "2026-04-20T11:56:58.345908",
+  "run_count": 29
 }

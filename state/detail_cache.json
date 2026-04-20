@@ -2721,5 +2721,25 @@
     ],
     "tenure": "freehold",
     "_cached": "2026-04-17T10:43:16.125642"
+  },
+  "19282891": {
+    "sqft": 1957,
+    "sqm": 182,
+    "description": "Available to view by appointment only, this substantial four bedroom Victorian house offers approximately 1,957 sq. ft. (181.8 sq. m) of internal accommodation, arranged over four floors and set on a sought-after residential street. The property retains a wealth of original character, including high ceilings, ornate cornicing, fireplaces and generous proportions throughout, whilst offering excellent scope for a purchaser to tailor to their own taste.<br/><br/>The raised ground floor comprises a bright double reception room with large sash windows and bay window outlook, leading through to a conservatory overlooking the garden. Additionally, there is with a separate WC also located on this level. <br/><br/>On the lower ground floor is a spacious kitchen dining room with direct access to a private rear garden extending to approximately 40 ft, along with an additional room and bathroom, making this level ideal for flexible living, guest accommodation or a home office.<br/><br/>The first floor provides two well-proportioned double bedrooms and a family bathroom, with the principal bedroom spanning the full width of the property into the bay window, while the second floor offers two further bedrooms, including an impressive top floor room with excellent natural light and access to a private balcony with far-reaching views. The property further benefits from solar panels on the roof.<br/><br/>Castlewood Road is a quiet residential street located within easy reach of Stoke Newington and the River Lea and the beautiful Walthamstow Marshes. Excellent transport links serve through Stamford Hill Station (National Rail), Seven Sisters Station (National Rail & Victoria Line) and a variety of bus routes to The City and West End are also available.<br/><br/>",
+    "floorplan_url": "https://media.onthemarket.com/properties/19282891/1608391247/floor-plan-0-1024x1024.jpg",
+    "features": [
+      "Tenure: Freehold",
+      "Freehold",
+      "Study",
+      "Four bedrooms",
+      "Double reception room",
+      "Kitchen/Diner",
+      "Private garden",
+      "Balcony",
+      "Close to River Lea",
+      "Close to Springdield Park"
+    ],
+    "tenure": "freehold",
+    "_cached": "2026-04-20T11:56:56.503733"
   }
 }

@@ -514,5 +514,41 @@
     "epc_sqm": 73.0,
     "epc_date": "2026-02-05",
     "date": "2026-04-22T11:42:22.565549"
+  },
+  "clonbrock road|n16": {
+    "epc_sqft": 334,
+    "epc_sqm": 31.0,
+    "epc_date": "2025-10-28",
+    "date": "2026-04-24T11:42:42.933514"
+  },
+  "stamford hill n16|n16": {
+    "epc_sqft": null,
+    "epc_sqm": null,
+    "epc_date": null,
+    "date": "2026-04-24T11:42:43.285923"
+  },
+  "bocking street|e8": {
+    "epc_sqft": 538,
+    "epc_sqm": 50.0,
+    "epc_date": "2026-01-16",
+    "date": "2026-04-24T11:42:43.680776"
+  },
+  "evering road|n16": {
+    "epc_sqft": 893,
+    "epc_sqm": 83.0,
+    "epc_date": "2026-02-18",
+    "date": "2026-04-24T11:42:44.052897"
+  },
+  "oriel road|e9": {
+    "epc_sqft": 1076,
+    "epc_sqm": 100.0,
+    "epc_date": "2025-07-24",
+    "date": "2026-04-24T11:42:44.453250"
+  },
+  "grosvenor avenue|n5": {
+    "epc_sqft": 484,
+    "epc_sqm": 45.0,
+    "epc_date": "2026-02-27",
+    "date": "2026-04-24T11:42:44.759333"
   }
 }

@@ -186,18 +186,22 @@
     },
     "otm:18392150": {
       "address": "Allerton Road, Stoke Newington, London, N16",
-      "price": 1950000,
+      "price": 1750000,
       "score": 39,
       "first_seen": "2026-03-01T12:03:59.580601",
       "price_history": [
         {
           "date": "2026-03-01T12:03:59.580601",
           "price": 1950000
+        },
+        {
+          "date": "2026-04-24T11:42:44.793203",
+          "price": 1750000
         }
       ],
       "beds": 6,
       "sqft": 2475,
-      "ppsf": 2447,
+      "ppsf": 2196,
       "epc_sqft": 797,
       "period": "victorian",
       "area_label": "Finsbury Park south"
@@ -861,13 +865,17 @@
     },
     "otm:17414983": {
       "address": "Sydner Road, London N16",
-      "price": 1135000,
+      "price": 1134950,
       "score": 27,
       "first_seen": "2026-03-01T12:03:59.580601",
       "price_history": [
         {
           "date": "2026-03-01T12:03:59.580601",
           "price": 1135000
+        },
+        {
+          "date": "2026-04-24T11:42:44.793203",
+          "price": 1134950
         }
       ],
       "beds": 3,
@@ -2292,7 +2300,7 @@
     "otm:13640650": {
       "address": "Farleigh Road N16, Stoke Newington",
       "price": 2000000,
-      "score": 48,
+      "score": 32,
       "first_seen": "2026-03-27T10:10:44.160305",
       "price_history": [
         {
@@ -2302,9 +2310,10 @@
       ],
       "beds": 5,
       "sqft": 2300,
-      "ppsf": 870,
+      "ppsf": 3868,
       "period": "modern",
-      "area_label": "Stoke Newington north"
+      "area_label": "Stoke Newington north",
+      "epc_sqft": 517
     },
     "otm:19103509": {
       "address": "Sudeley Street, London, N1",
@@ -3052,8 +3061,116 @@
           "price": 1500000
         }
       ]
+    },
+    "otm:19318282": {
+      "address": "Stamford Hill N16",
+      "price": 1750000,
+      "score": 46,
+      "beds": 6,
+      "sqft": 2281,
+      "epc_sqft": null,
+      "ppsf": 767,
+      "period": "period",
+      "area_label": "Stoke Newington area",
+      "first_seen": "2026-04-24T11:42:44.793203",
+      "price_history": [
+        {
+          "date": "2026-04-24T11:42:44.793203",
+          "price": 1750000
+        }
+      ]
+    },
+    "otm:19317877": {
+      "address": "Clonbrock Road, Stoke Newington, N16",
+      "price": 1575000,
+      "score": 40,
+      "beds": 5,
+      "sqft": 1915,
+      "epc_sqft": 334,
+      "ppsf": 4716,
+      "period": "unknown",
+      "area_label": "Stoke Newington Church St",
+      "first_seen": "2026-04-24T11:42:44.793203",
+      "price_history": [
+        {
+          "date": "2026-04-24T11:42:44.793203",
+          "price": 1575000
+        }
+      ]
+    },
+    "otm:19319522": {
+      "address": "Oriel Road, London, E9",
+      "price": 835000,
+      "score": 40,
+      "beds": 3,
+      "sqft": 882,
+      "epc_sqft": 1076,
+      "ppsf": 776,
+      "period": "victorian",
+      "area_label": "Well St / Cassland",
+      "first_seen": "2026-04-24T11:42:44.793203",
+      "price_history": [
+        {
+          "date": "2026-04-24T11:42:44.793203",
+          "price": 835000
+        }
+      ]
+    },
+    "otm:19325656": {
+      "address": "Bocking Street, London E8",
+      "price": 900000,
+      "score": 30,
+      "beds": 3,
+      "sqft": 991,
+      "epc_sqft": 538,
+      "ppsf": 1673,
+      "period": "unknown",
+      "area_label": "Broadway Market",
+      "first_seen": "2026-04-24T11:42:44.793203",
+      "price_history": [
+        {
+          "date": "2026-04-24T11:42:44.793203",
+          "price": 900000
+        }
+      ]
+    },
+    "otm:19327330": {
+      "address": "Grosvenor Avenue, Highbury and Islington, London, N5",
+      "price": 1650000,
+      "score": 25,
+      "beds": 3,
+      "sqft": 1213,
+      "epc_sqft": 484,
+      "ppsf": 3409,
+      "period": "unknown",
+      "area_label": "Highbury (south)",
+      "first_seen": "2026-04-24T11:42:44.793203",
+      "price_history": [
+        {
+          "date": "2026-04-24T11:42:44.793203",
+          "price": 1650000
+        }
+      ]
+    },
+    "otm:18796251": {
+      "address": "Evering Road, N16, Stoke Newington, London, N16",
+      "price": 1800000,
+      "score": 14,
+      "beds": 7,
+      "sqft": 2680,
+      "epc_sqft": 893,
+      "ppsf": 2016,
+      "period": "unknown",
+      "area_label": "Manor House / Woodberry",
+      "first_seen": "2026-04-24T11:42:44.793203",
+      "price_history": [
+        {
+          "date": "2026-04-24T11:42:44.793203",
+          "price": 1800000
+        }
+      ]
     }
   },
-  "last_run": "2026-04-22T11:42:22.597977",
-  "run_count": 30
+  "last_run": "2026-04-24T11:42:44.793352",
+  "run_count": 31
 }

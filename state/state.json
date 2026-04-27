@@ -826,7 +826,7 @@
     },
     "otm:15810202": {
       "address": "Northwold Road, Stoke Newington",
-      "price": 1120000,
+      "price": 1150000,
       "score": 42,
       "first_seen": "2026-03-01T12:03:59.580601",
       "price_history": [
@@ -837,11 +837,15 @@
         {
           "date": "2026-04-13T11:55:47.506043",
           "price": 1120000
+        },
+        {
+          "date": "2026-04-27T12:22:58.771212",
+          "price": 1150000
         }
       ],
       "beds": 4,
       "sqft": 1073,
-      "ppsf": 1044,
+      "ppsf": 1072,
       "period": "victorian",
       "area_label": "Manor House / Woodberry"
     },
@@ -2398,13 +2402,17 @@
     },
     "otm:19102996": {
       "address": "Treaty Street, King's Cross, London, N1",
-      "price": 850000,
+      "price": 800000,
       "score": -1,
       "first_seen": "2026-03-27T10:10:44.160383",
       "price_history": [
         {
           "date": "2026-03-27T10:10:44.160383",
           "price": 850000
+        },
+        {
+          "date": "2026-04-27T12:22:58.771364",
+          "price": 800000
         }
       ],
       "beds": 4,
@@ -3171,6 +3179,6 @@
       ]
     }
   },
-  "last_run": "2026-04-24T11:42:44.793352",
-  "run_count": 31
+  "last_run": "2026-04-27T12:22:58.771373",
+  "run_count": 32
 }

@@ -2224,5 +2224,36 @@
     "garden_assessment": "large",
     "verdict": "mixed",
     "summary": "Strong main bedroom and generous plot with large rear garden are real positives, but the kitchen is entirely separate from the reception room requiring full replanning to open up. Bedroom Three is very small and the attic offers unconverted potential."
+  },
+  "https://media.onthemarket.com/properties/19349065/1610640875/floor-plan-0-1024x1024.jpg": {
+    "bedrooms_by_floor": {
+      "basement": 0,
+      "lower_ground": 0,
+      "ground": 0,
+      "first": 3,
+      "second": 2,
+      "third": 0
+    },
+    "total_above_ground_beds": 5,
+    "basement_rooms": [],
+    "room_concerns": [
+      "Second floor Bedroom measures only 2.61 x 2.48m (8'7 x 8'2) \u2014 well under 8ft wide and extremely small, barely usable as a single bedroom",
+      "Bedroom/Dressing Room on first floor is only 3.05 x 2.58m (10'0 x 8'6) \u2014 narrow and likely better used as dressing room than a true bedroom",
+      "Ground floor open-plan Reception/Dining/Kitchen at 10.10 x 4.20m is long and narrow at 13'9 wide, limiting flexible furniture arrangement",
+      "Second floor has reduced headroom (ceiling height noted at 7'5/2.25m) affecting usability of the larger second floor bedroom",
+      "Store room on ground floor occupies space adjacent to kitchen that could otherwise improve kitchen separation or utility provision",
+      "No separate kitchen \u2014 ground floor is entirely open plan reception/dining/kitchen with no option for a distinct cooking zone"
+    ],
+    "main_bed_adequate": true,
+    "circulation_pct": 18,
+    "kitchen_location": "ground",
+    "kitchen_mod_difficulty": "easy",
+    "kitchen_adjacent_reception": true,
+    "through_reception": false,
+    "double_fronted": false,
+    "extension_potential": true,
+    "garden_assessment": "small",
+    "verdict": "mixed",
+    "summary": "Strong open-plan ground floor and good bedroom count are offset by two very small upper bedrooms (one barely 8ft wide) and a shallow 17ft garden. Works well for a couple or small family but the fifth 'bedroom' is marginal."
   }
 }

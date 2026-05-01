@@ -1132,18 +1132,22 @@
     },
     "otm:18783258": {
       "address": "Northdown Street, King's Cross, N1",
-      "price": 1495000,
+      "price": 1450000,
       "score": 38,
       "first_seen": "2026-03-01T12:03:59.580601",
       "price_history": [
         {
           "date": "2026-03-01T12:03:59.580601",
           "price": 1495000
+        },
+        {
+          "date": "2026-05-01T09:17:37.137908",
+          "price": 1450000
         }
       ],
       "beds": 3,
       "sqft": 1158,
-      "ppsf": 2955,
+      "ppsf": 2866,
       "epc_sqft": 506,
       "period": "unknown",
       "area_label": "Islington (unzoned)"
@@ -2396,18 +2400,22 @@
     },
     "otm:16200943": {
       "address": "Durley Road, Stamford Hill",
-      "price": 1800000,
+      "price": 1700000,
       "score": 13,
       "first_seen": "2026-03-27T10:10:44.160305",
       "price_history": [
         {
           "date": "2026-03-27T10:10:44.160305",
           "price": 1800000
+        },
+        {
+          "date": "2026-05-01T09:17:37.137908",
+          "price": 1700000
         }
       ],
       "beds": 6,
       "sqft": 2281,
-      "ppsf": 789,
+      "ppsf": 745,
       "period": "period"
     },
     "otm:19102996": {
@@ -3082,12 +3090,12 @@
     },
     "otm:19318282": {
       "address": "Stamford Hill N16",
-      "price": 1750000,
-      "score": 46,
+      "price": 1700000,
+      "score": 47,
       "beds": 6,
       "sqft": 2281,
       "epc_sqft": null,
-      "ppsf": 767,
+      "ppsf": 745,
       "period": "period",
       "area_label": "Stoke Newington area",
       "first_seen": "2026-04-24T11:42:44.793203",
@@ -3095,6 +3103,10 @@
         {
           "date": "2026-04-24T11:42:44.793203",
           "price": 1750000
+        },
+        {
+          "date": "2026-05-01T09:17:37.137908",
+          "price": 1700000
         }
       ]
     },
@@ -3277,8 +3289,134 @@
           "price": 1400000
         }
       ]
+    },
+    "otm:19375558": {
+      "address": "Elder Walk, Islington, London, N1",
+      "price": 1100000,
+      "score": 57,
+      "beds": 4,
+      "sqft": 1226,
+      "epc_sqft": 775,
+      "ppsf": 1419,
+      "period": "unknown",
+      "area_label": "Barnsbury",
+      "first_seen": "2026-05-01T09:17:37.137908",
+      "price_history": [
+        {
+          "date": "2026-05-01T09:17:37.137908",
+          "price": 1100000
+        }
+      ]
+    },
+    "otm:19379924": {
+      "address": "Beck Road, London, E8",
+      "price": 1150000,
+      "score": 54,
+      "beds": 3,
+      "sqft": null,
+      "epc_sqft": 1098,
+      "ppsf": 1047,
+      "period": "victorian",
+      "area_label": "Broadway Market",
+      "first_seen": "2026-05-01T09:17:37.137908",
+      "price_history": [
+        {
+          "date": "2026-05-01T09:17:37.137908",
+          "price": 1150000
+        }
+      ]
+    },
+    "otm:18972639": {
+      "address": "King Henrys Walk, London N1",
+      "price": 2000000,
+      "score": 52,
+      "beds": 4,
+      "sqft": 2185,
+      "epc_sqft": 517,
+      "ppsf": 3868,
+      "period": "unknown",
+      "area_label": "Newington Green",
+      "first_seen": "2026-05-01T09:17:37.137908",
+      "price_history": [
+        {
+          "date": "2026-05-01T09:17:37.137908",
+          "price": 2000000
+        }
+      ]
+    },
+    "otm:19383142": {
+      "address": "Whistler Street, Highbury, London, N5",
+      "price": 1400000,
+      "score": 39,
+      "beds": 3,
+      "sqft": null,
+      "epc_sqft": 710,
+      "ppsf": 1972,
+      "period": "victorian",
+      "area_label": "Highbury Fields",
+      "first_seen": "2026-05-01T09:17:37.137908",
+      "price_history": [
+        {
+          "date": "2026-05-01T09:17:37.137908",
+          "price": 1400000
+        }
+      ]
+    },
+    "otm:19383071": {
+      "address": "Monsell Road, London N4",
+      "price": 800000,
+      "score": 37,
+      "beds": 3,
+      "sqft": null,
+      "epc_sqft": 657,
+      "ppsf": 1218,
+      "period": "victorian",
+      "area_label": "Highbury Hill / Finsbury Pk borders",
+      "first_seen": "2026-05-01T09:17:37.137908",
+      "price_history": [
+        {
+          "date": "2026-05-01T09:17:37.137908",
+          "price": 800000
+        }
+      ]
+    },
+    "otm:19382822": {
+      "address": "Norcott Road, London, N16",
+      "price": 1700000,
+      "score": 32,
+      "beds": 5,
+      "sqft": 2152,
+      "epc_sqft": 893,
+      "ppsf": 1904,
+      "period": "unknown",
+      "area_label": "Manor House / Woodberry",
+      "first_seen": "2026-05-01T09:17:37.137908",
+      "price_history": [
+        {
+          "date": "2026-05-01T09:17:37.137908",
+          "price": 1700000
+        }
+      ]
+    },
+    "otm:19379816": {
+      "address": "Coach House Lane, London, N5",
+      "price": 1150000,
+      "score": 30,
+      "beds": 3,
+      "sqft": 1178,
+      "epc_sqft": 614,
+      "ppsf": 1873,
+      "period": "unknown",
+      "area_label": "Highbury Fields",
+      "first_seen": "2026-05-01T09:17:37.137908",
+      "price_history": [
+        {
+          "date": "2026-05-01T09:17:37.137908",
+          "price": 1150000
+        }
+      ]
     }
   },
-  "last_run": "2026-04-29T09:33:12.289303",
-  "run_count": 33
+  "last_run": "2026-05-01T09:17:37.138060",
+  "run_count": 34
 }

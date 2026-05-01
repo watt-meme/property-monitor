@@ -574,5 +574,47 @@
     "epc_sqm": 43.0,
     "epc_date": "2025-12-22",
     "date": "2026-04-29T09:33:12.254912"
+  },
+  "elder walk|n1": {
+    "epc_sqft": 775,
+    "epc_sqm": 72.0,
+    "epc_date": "2026-03-17",
+    "date": "2026-05-01T09:17:35.146976"
+  },
+  "king henrys walk|n1": {
+    "epc_sqft": 517,
+    "epc_sqm": 48.0,
+    "epc_date": "2026-03-09",
+    "date": "2026-05-01T09:17:35.452538"
+  },
+  "beck road|e8": {
+    "epc_sqft": 1098,
+    "epc_sqm": 102.0,
+    "epc_date": "2024-07-10",
+    "date": "2026-05-01T09:17:35.809423"
+  },
+  "norcott road|n16": {
+    "epc_sqft": 893,
+    "epc_sqm": 83.0,
+    "epc_date": "2025-10-30",
+    "date": "2026-05-01T09:17:36.110659"
+  },
+  "whistler street|n5": {
+    "epc_sqft": 710,
+    "epc_sqm": 66.0,
+    "epc_date": "2026-03-05",
+    "date": "2026-05-01T09:17:36.456956"
+  },
+  "coach house lane|n5": {
+    "epc_sqft": 614,
+    "epc_sqm": 57.0,
+    "epc_date": "2025-12-12",
+    "date": "2026-05-01T09:17:36.774114"
+  },
+  "monsell road|n4": {
+    "epc_sqft": 657,
+    "epc_sqm": 61.0,
+    "epc_date": "2026-03-04",
+    "date": "2026-05-01T09:17:37.103347"
   }
 }
